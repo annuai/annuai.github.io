@@ -44,7 +44,8 @@
         </div>
       </div>
 
-	<header class="header" id="header" style="height:70%;">
+	<section class="header" id="header" style="height:70vh;">
+	<header class="header" id="header" style="height:100%;">
 	<div id="container">
 	<div id="menu"><img src="/public/images/search.png" class="menu search" height="27" /><a href="#" class="btn btn-primary" data-action="toggle" data-side="right"><img src="/public/images/menu.png" class="menu" height="24" /></a></div>
 	<div id="social">
@@ -54,10 +55,11 @@
 	<img src="/public/images/text4171.png" height="50" id="logo" style="vertical-align:baseline;" />
 	</div>
 	</header>
+	</section>
 	<section class="full" id="full">
 	<div class="slide" style="background:url('/public/images/bg.png') bottom repeat-x;">
 	<div id="container">
-		<div id="main">
+		<div id="main" style="padding-bottom:300px;">
 			<div id="content">
 			<div class="head">
 			<img src="/public/images/text4136.png" />
@@ -162,7 +164,8 @@
 	</div>
 	</div>
 	</section>
-	<footer class="footer" id="footer" style="height:50px;">
+	<section class="footer" style="height:50px;">
+	<footer id="footer" style="height:100%;">
 	<div id="container">
 	</div>
 	<div class="footer-menu">
@@ -179,6 +182,7 @@
 	</div>
 	</div>
 	</footer>
+	</section>
 	<div id="overlay">
 	</div>
 	<script type="text/javascript">
@@ -228,20 +232,37 @@ function updateImageSize() {
 	    		$('#header').animate({height:'100'});
 	    		$('#overlay').show();
 	    	});
+	    	$('.btn').click(function(){
+	    		$('#slide-numbers').hide();
+	    	});
 	    	});
 	    </script>
 	    <div class="sidebar right">HELLO</div>
 	<script type="text/JavaScript">
-	$('#pageWrapper').alton({
-	fullSlideContainer: 'full', // Tell Alton the full height container
-	singleSlideClass: 'slide', // Tell Alton the full height slide class
-    useSlideNumbers: true, // Set to false if you don't want to use pagination
-    slideNumbersBorderColor: '#fff', // Set the outside color of the pagination items
-    slideNumbersColor: 'transparent', // Set the inner color of the pagination items
-    bodyContainer: 'pageWrapper', // Tell Alton the body class
-    lastClass: 'footer',
-    scrollMode:'featuredScroll'
-    });
+    			(function($) {
+				$(document).ready(function() {
+				    $(document).alton({
+				        fullSlideContainer: 'full',
+				        singleSlideClass: 'slide',
+				        useSlideNumbers: true,
+				        slideNumbersBorderColor: '#fff',
+				        slideNumbersColor: 'transparent',
+				        bodyContainer: 'pageWrapper',
+				        firstClass : 'header', // Set the first container class
+				        lastClass: 'footer',
+				        scrollMode:'featuredScroll'
+				    });
+				});
+			})(jQuery);
 	</script>
+	<script type="text/javascript">
+$(document).ready(function(){
+	var winheight = 0;
+	$(".slide").each(function(){
+		winheight = ($(window).height());
+		$('.slide').height(winheight);
+	});
+});
+</script>
 </body>
 </html>

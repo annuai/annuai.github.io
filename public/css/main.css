@@ -3,6 +3,18 @@ body,html{
 		margin: 0;
 		color: #FFF;
 	}
+  @font-face {
+    font-family: 'SUNN'; /*a name to be used later*/
+    src: url('/public/fonts/SUNN.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'fontin'; /*a name to be used later*/
+    src: url('/public/fonts/Fontin-Regular.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Facebook Letter Faces'; /*a name to be used later*/
+    src: url('/public/fonts/facebook-letter-faces.ttf'); /*URL to font*/
+}
 	/* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
@@ -19,7 +31,7 @@ if it's not present, don't show loader */
 	#header{
 		background:#11A28F;
 		margin: 0;
-		height: 70%;
+		height: 70vh;
 		position: relative;
 	}
 	#logo{
@@ -34,7 +46,7 @@ if it's not present, don't show loader */
 	}
 	#tagline{
 		font-family: 'SUNN';
-		font-size: 59px;
+    font-size: 60px;
 		color: #FFF;
 		letter-spacing: 8px;
 		padding-top: 30%;
@@ -80,6 +92,7 @@ if it's not present, don't show loader */
 		height: 24px;
 		text-transform: uppercase;
 		font-family:'Facebook Letter Faces';
+    src: url(http://annuai) format("truetype");
 	}
 	#footer .footer-menu ul{
 		padding: 0;
