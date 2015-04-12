@@ -8,7 +8,7 @@
 
   <title>
     
-      Annu &middot; the innovators workplace
+      Annu &bull; the innovators workplace
     
   </title>
 
@@ -18,7 +18,7 @@
 
   <!-- Icons -->
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/public/apple-touch-icon-precomposed.png">
-  <link rel="shortcut icon" href="/public/favicon.ico">
+  <link rel="shortcut icon" href="/public/images/favicon.png">
 
   <!-- RSS -->
   <link rel="alternate" type="application/atom+xml" title="Annu" href="/atom.xml">
@@ -34,20 +34,24 @@
 		$(".loader").fadeOut("slow");;
 	});
 	</script>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   <script type="text/JavaScript" src="/public/js/jquery.sidebar.min.js"></script>
   <script type="text/JavaScript" src="/public/js/jquery.alton.js"></script>
 <body class="pageWrapper">
       <div class="loader">
-        <div class="loader-inner ball-scale-ripple">
-          <div></div>
-        </div>
+      <div id="overlay"></div>
+<div class="spinner">
+  <div class="box box1"></div>
+  <div class="box box2"></div>
+</div>
       </div>
 
 	<section class="header" id="header" style="height:70vh;">
 	<header class="header" id="header" style="height:100%;">
+			<div id="search">
+		<input type="text" placeholder="Search..." class="search">
+	</div>
 	<div id="container">
-	<div id="menu"><img src="/public/images/search.png" class="menu search" height="27" /><a href="#" class="btn btn-primary" data-action="toggle" data-side="right"><img src="/public/images/menu.png" class="menu" height="24" /></a></div>
+	<div id="menu"><img src="/public/images/search.png" class="menu search-btn" height="27" /><a href="#" class="btn btn-primary" data-action="toggle" data-side="right"><img src="/public/images/menu.png" class="menu" height="24" /></a></div>
 	<div id="social">
 	<a href="">HOME</a> &nbsp; <a href="">BLOG</a> &nbsp; <a href="">PROJECTS</a> &nbsp; <a href="http://facebook.com/annuai">@annuai</a>
 	</div>
@@ -151,12 +155,12 @@
 			</div>
 			<div class="paragraph" style=" margin-top:50px; padding:0px 50px 0;color:#FFF;">
 			<div id="contact">
-			<a href=""><img src="/public/images/WhatsApp.png" height="24">+91 9645 738 621 </a>
-			<a href=""><img src="/public/images/Facebook.png" height="24">fb/annuai </a>
-			<a href=""><img src="/public/images/Twitter.png" height="24">twitter/annu625 </a>
+			<a><img src="/public/images/WhatsApp.png" height="24">+91 9645 738 621 </a>
+			<a href="http://facebook.com/annuai"><img src="/public/images/Facebook.png" height="24">fb/annuai </a>
+			<a href="http://twitter.com/annu625"><img src="/public/images/Twitter.png" height="24">twitter/annu625 </a>
 			<a href="mailto:annuai.annu@gmail.com"><img src="/public/images/mail.png" height="22">annuai.annu@gmail.com</a>
-			<a href=""><img src="/public/images/Github.png" height="24">&nbsp;git:annuai</a>
-			<a href=""><img src="/public/images/Skype.png" height="24">annuaip</a>
+			<a href="http://github.com/annuai"><img src="/public/images/Github.png" height="24">&nbsp;git:annuai</a>
+			<a><img src="/public/images/Skype.png" height="24">annuaip</a>
 			</div>
 			</div>
 			</div>
@@ -183,8 +187,6 @@
 	</div>
 	</footer>
 	</section>
-	<div id="overlay">
-	</div>
 	<script type="text/javascript">
 function updateImageSize() {
     $(img).each(function(){
@@ -227,10 +229,13 @@ function updateImageSize() {
 	    </script>
 	    <script type="text/javascript">
 	    $(document).ready(function () {
-	    	$('#overlay').hide();
-	    	$('.search').click(function(){
-	    		$('#header').animate({height:'100'});
+	    	$('#search').hide();
+	    	$('.search-btn').click(function(){
+	    		$('#header').animate({height:'200'});
 	    		$('#overlay').show();
+	    		$('#search').fadeIn(1000);
+	    		$('#search .search').focus();
+	    		$('#header #container').hide();
 	    	});
 	    	$('.btn').click(function(){
 	    		$('#slide-numbers').hide();
