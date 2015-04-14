@@ -18,6 +18,7 @@ if it's not present, don't show loader */
 .no-js #loader { display: none;  }
 .js #loader { display: block; position: absolute; left: 100px; top: 0; }
 .loader {
+  display: none;
 	position: fixed;
 	left: 0px;
 	top: 0px;
