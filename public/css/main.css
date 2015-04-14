@@ -3,10 +3,6 @@ body,html{
 		margin: 0;
 		color: #FFF;
 	}
-  @font-face {
-    font-family: 'SUNN'; /*a name to be used later*/
-    src: url('/public/fonts/SUNN.ttf'); /*URL to font*/
-}
 @font-face {
     font-family: 'fontin'; /*a name to be used later*/
     src: url('/public/fonts/Fontin-Regular.ttf'); /*URL to font*/
@@ -15,10 +11,7 @@ body,html{
     font-family: 'Facebook Letter Faces'; /*a name to be used later*/
     src: url('/public/fonts/facebook-letter-faces.ttf'); /*URL to font*/
 }
-@font-face {
-    font-family: 'ubuntu'; /*a name to be used later*/
-    src: url('/public/fonts/ubuntu.ttf'); /*URL to font*/
-}
+
 	/* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
 if it's not present, don't show loader */
@@ -148,8 +141,6 @@ if it's not present, don't show loader */
 		margin-top: 50px;
 		background: #FFFFDD;
 		height: 100%;
-		font-family:'ubuntu';
-    font-size: 18px;
 		border-radius:10px 10px 0 0;
 		-webkit-border-radius:10px 10px 0 0;
 		-moz-border-radius:10px 10px 0 0;
@@ -238,9 +229,8 @@ if it's not present, don't show loader */
 }
 .travel{
   background:#E6D9B7;
-  padding:150px;
-  width:50%;
-  border-radius:50%;
+  padding:60px 50px;
+  border-radius:10px;
   margin-left:auto;
   margin-right:auto;
 }
