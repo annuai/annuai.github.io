@@ -36,6 +36,7 @@
 	</script>
   <script type="text/JavaScript" src="/public/js/jquery.sidebar.min.js"></script>
   <script type="text/JavaScript" src="/public/js/jquery.alton.js"></script>
+  <script type="text/JavaScript" src="/public/js/jekyll-search.js"></script>
 <body class="pageWrapper">
       <div class="loader">
       <div id="overlay"></div>
@@ -48,14 +49,29 @@
 	<section class="header" id="header" style="height:70vh;">
 	<header class="header" id="header" style="height:100%;">
 			<div id="search">
-		<input type="text" placeholder="Search..." class="search">
-	</div>
+	    <div id="search-demo-container">
+      <input type="text" id="search-input" class="search" placeholder="search...">
+      <ul id="results-container"></ul>
+    </div>
+    	</div>
+    <script type="text/javascript">
+      SimpleJekyllSearch.init({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        dataSource: '/search.json',
+        searchResultTemplate: '<li><a href="http://localhost:4000{url}" title="{desc}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+      })
+    </script>
 	<div id="container">
 	<div id="menu"><img src="/public/images/search.png" class="menu search-btn" height="27" /><a href="#" class="btn btn-primary" data-action="toggle" data-side="right"><img src="/public/images/menu.png" class="menu" height="24" /></a></div>
 	<div id="social">
 	<a href="">HOME</a> &nbsp; <a href="">BLOG</a> &nbsp; <a href="">PROJECTS</a> &nbsp; <a href="http://facebook.com/annuai">@annuai</a>
 	</div>
 	<div id="tagline">innovator &bull; designer &bull; programmer</div>
+	<div id="tagline-small">innovator <br /> designer <br /> programmer</div>
 	<img src="/public/images/text4171.png" height="50" id="logo" style="vertical-align:baseline;" />
 	</div>
 	</header>
@@ -99,9 +115,9 @@
 	</div>
 		<div class="slide" style="background:url('/public/images/travel.png') center center fixed #11A28F;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;" >
 		<div id="main" style="padding:10%;;">
-			<div id="content" style="background:#E6D9B7;padding:150px; width:50%; border-radius:50%; margin-left:auto;margin-right:auto;">
+			<div id="content" class="travel">
 			<div class="head" style="font-family:'Stalemate';color:#FFF;">
-			<img src="/public/images/traveltheworld.png" height="100">
+			<img src="/public/images/traveltheworld1.png" class="travelheader" height="100"><img src="/public/images/traveltheworld2.png" class="travelheader theworld" height="60">
 			</div>
 			<div class="paragraph" style=" margin-top:-40px; padding:40px 55px 0;color:#11A28F;">
 			had always been my biggest dream.
@@ -134,10 +150,10 @@
 	</div>
 		<div class="slide" style="background:#0892A5;">
 	<div id="container">
-		<div id="main" style="padding-top:30%;">
-			<div id="content">
+		<div id="main">
+			<div id="content" class="pllimg">
 			<center>
-			<img src="/public/images/pll.png"><br /><br />
+			<img src="/public/images/pll1.png"><img src="/public/images/pll2.png"><img src="/public/images/pll3.png"><br /><br />
 			</center>
 			<div class="pll">
 			<span style="padding-left:120px;">Peace.</span><span style="padding-left:145px;">Love.</span><span style="padding-left:150px;">Linux.</span>
@@ -146,7 +162,7 @@
 		</div>
 	</div>
 	</div>
-		<div class="slide" style="background:url('/public/images/socialbg.png') bottom right no-repeat #3d7ba0;">
+		<div class="slide socialcontacts">
 	<div id="container">
 		<div id="main">
 			<div id="content">
@@ -158,7 +174,7 @@
 			<a><img src="/public/images/WhatsApp.png" height="24">+91 9645 738 621 </a>
 			<a href="http://facebook.com/annuai"><img src="/public/images/Facebook.png" height="24">fb/annuai </a>
 			<a href="http://twitter.com/annu625"><img src="/public/images/Twitter.png" height="24">twitter/annu625 </a>
-			<a href="mailto:annuai.annu@gmail.com"><img src="/public/images/mail.png" height="22">annuai.annu@gmail.com</a>
+			<a href="mailto:annuai.annu@gmail.com"><img src="/public/images/mail.png" height="22">annuai@outlook.com</a>
 			<a href="http://github.com/annuai"><img src="/public/images/Github.png" height="24">&nbsp;git:annuai</a>
 			<a><img src="/public/images/Skype.png" height="24">annuaip</a>
 			</div>

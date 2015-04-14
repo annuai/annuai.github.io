@@ -1,0 +1,35 @@
+[
+  
+    {
+      "title"    : "Introducing Poole",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "//blog/2014/01/02/introducing-poole/",
+      "date"     : "2014-01-02 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "Example content",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "//blog/2014/01/01/example-content/",
+      "date"     : "2014-01-01 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "What&#39;s Jekyll?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "//blog/2013/12/31/whats-jekyll/",
+      "date"     : "2013-12-31 00:00:00 +0530"
+    } ,
+  
+    {
+      "title"    : "What&#39;s Jekyll?",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "//blog/2013/12/31/lorem-ipsum/",
+      "date"     : "2013-12-31 00:00:00 +0530"
+    } 
+  
+]

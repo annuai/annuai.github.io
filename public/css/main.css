@@ -57,6 +57,17 @@ if it's not present, don't show loader */
 		font-weight: 600;
     padding-top: 30vh;
 	}
+  #tagline-small{
+    font-family: 'SUNN';
+    font-size: 60px;
+    color: #FFF;
+    letter-spacing: 6px;
+    vertical-align: middle;
+    font-weight: 600;
+    padding-top: 25vh;
+    padding-left: 50px;
+    display: none;
+  }
 	#content{
 		font-size: 16px;
 		color: #000;
@@ -114,6 +125,7 @@ if it's not present, don't show loader */
 	#menu{
 		float: right;
 		margin-top: 30px;
+    margin-right: 20px;
 	}
 	#menu .menu{
 		margin-left: 30px;
@@ -135,7 +147,7 @@ if it's not present, don't show loader */
 	#ubuwindow{
 		margin-top: 50px;
 		background: #FFFFDD;
-		height: 400px;
+		height: 100%;
 		font-family:'ubuntu';
     font-size: 18px;
 		border-radius:10px 10px 0 0;
@@ -224,6 +236,23 @@ if it's not present, don't show loader */
   left:       0; 
   position:   fixed;
 }
+.travel{
+  background:#E6D9B7;
+  padding:150px;
+  width:50%;
+  border-radius:50%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.socialcontacts{
+  background:url('/public/images/socialbg.png') bottom right no-repeat #3d7ba0;
+}
+.pllimg img{
+  padding-left: 30px;
+}
+.travelheader{
+  width: auto !important;
+}
 
 .spinner {
   position: absolute;
@@ -241,7 +270,7 @@ if it's not present, don't show loader */
 
 .box {
   position: absolute;
-  background-color: #11A28F;  
+  background-color: #000;  
 }
 
 /* This one stays put */
@@ -292,3 +321,72 @@ if it's not present, don't show loader */
   to   { -webkit-transform: rotate(-360deg); }
 }
 
+
+ @media screen and (max-width: 900px) {
+  #container{
+    width: 700px;
+  }
+  .travel{
+    margin-top: 100px;
+     padding:40px;
+     width:80%;
+     border-radius:10%;
+  }
+}
+@media screen and (max-width: 480px) {
+   #container{
+    width: 470px;
+  }
+  #tagline{
+    display: none;
+  }
+  #tagline-small{
+    display: block;
+  }
+  #logo{
+    height: 30px;
+    padding-left: 30px;
+  }
+  .head img{
+    width: 380px;
+  }
+  .pll span{
+    display: block;
+    padding-left: 0;
+  }
+  .pllimg{
+        padding-top: 3vh;
+  }
+  .pllimg img{
+    padding-left: 10px;
+    padding-bottom: 20px;
+  }
+  .pll span{
+    display: block;
+    padding-left: 0 !important;
+    text-align: center;
+  }
+  .theworld{
+    padding-left: 50px;
+  }
+    .socialcontacts{
+    background:url('/public/images/socialbg-small.png') bottom right no-repeat #3d7ba0;
+  }
+}
+@media screen and (max-width: 750px){
+  .pll span{
+    display: block;
+    padding-left: 0 !important;
+    text-align: center;
+    padding-top: 10px;
+  }
+    #container{
+    width: 600px;
+  }
+  .head img{
+    width: 500px;
+  }
+  .socialcontacts{
+    background:url('/public/images/socialbg.png') bottom right no-repeat #3d7ba0;
+  }
+}

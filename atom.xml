@@ -4,7 +4,7 @@
  <title>Annu</title>
  <link href="http://annu.co/atom.xml" rel="self"/>
  <link href="http://annu.co/"/>
- <updated>2015-04-12T21:13:40+05:30</updated>
+ <updated>2015-04-14T12:24:17+05:30</updated>
  <id>http://annu.co</id>
  <author>
    <name>Annuai</name>
@@ -14,9 +14,9 @@
  
  <entry>
    <title>Introducing Poole</title>
-   <link href="http://annu.co//2014/01/02/introducing-poole/"/>
+   <link href="http://annu.co//blog/2014/01/02/introducing-poole/"/>
    <updated>2014-01-02T00:00:00+05:30</updated>
-   <id>http://annu.co/2014/01/02/introducing-poole</id>
+   <id>http://annu.co/blog/2014/01/02/introducing-poole</id>
    <content type="html">&lt;p&gt;&lt;em&gt;The Strange Case of Dr. Jekyll and Mr. Hyde&lt;/em&gt; tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel’s supporting cast is a man by the name of Mr. Poole, Dr. Jekyll’s loyal butler.&lt;/p&gt;
 
 &lt;hr /&gt;
@@ -61,9 +61,9 @@
  
  <entry>
    <title>Example content</title>
-   <link href="http://annu.co//2014/01/01/example-content/"/>
+   <link href="http://annu.co//blog/2014/01/01/example-content/"/>
    <updated>2014-01-01T00:00:00+05:30</updated>
-   <id>http://annu.co/2014/01/01/example-content</id>
+   <id>http://annu.co/blog/2014/01/01/example-content</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
   Howdy! This is an example blog post that shows several types of HTML content supported in this theme.
 &lt;/div&gt;
@@ -207,9 +207,9 @@
  
  <entry>
    <title>What's Jekyll?</title>
-   <link href="http://annu.co//2013/12/31/whats-jekyll/"/>
+   <link href="http://annu.co//blog/2013/12/31/whats-jekyll/"/>
    <updated>2013-12-31T00:00:00+05:30</updated>
-   <id>http://annu.co/2013/12/31/whats-jekyll</id>
+   <id>http://annu.co/blog/2013/12/31/whats-jekyll</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
 
 &lt;blockquote&gt;
@@ -217,6 +217,23 @@
 &lt;/blockquote&gt;
 
 &lt;p&gt;It’s an immensely useful tool. Find out more by &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;visiting the project on GitHub&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>What's Jekyll?</title>
+   <link href="http://annu.co//blog/2013/12/31/lorem-ipsum/"/>
+   <updated>2013-12-31T00:00:00+05:30</updated>
+   <id>http://annu.co/blog/2013/12/31/lorem-ipsum</id>
+   <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum viverra nunc eu tempus. Nunc condimentum libero lectus, sed tempor nulla scelerisque at. Pellentesque et leo quis dui finibus rutrum a sit amet diam. Sed blandit turpis eget tincidunt rutrum. Integer fermentum condimentum luctus. Aliquam erat volutpat. Suspendisse leo turpis, vulputate sed condimentum ac, lacinia vitae metus. Fusce enim arcu, tristique consectetur ante ut, consequat vulputate mauris. Donec ornare eros et augue auctor egestas. Integer vitae molestie ligula, vitae pulvinar nisl. Aenean viverra risus faucibus magna dictum gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In aliquam suscipit neque, quis tempus arcu porttitor vel. Donec et aliquet tellus. Pellentesque tellus odio, pretium eu eros sed, varius tincidunt ex. Praesent et dolor non purus aliquet semper ut eu magna.&lt;/p&gt;
+
+&lt;p&gt;Sed sollicitudin viverra commodo. Duis vestibulum ut eros non volutpat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed et turpis felis. Nullam sagittis risus et nulla hendrerit, eu blandit odio varius. Aliquam cursus dolor sodales feugiat auctor. Morbi eget diam rhoncus, porta magna vitae, cursus tortor. Maecenas erat quam, feugiat ac rutrum et, gravida sit amet ipsum. Suspendisse vestibulum luctus massa, sed vulputate mi tempor ut.&lt;/p&gt;
+
+&lt;p&gt;Donec vehicula arcu quis massa pretium, sed commodo dolor tincidunt. Duis tincidunt quis libero eu vestibulum. Integer pulvinar urna non suscipit tincidunt. In malesuada enim quis pellentesque mollis. Integer id magna a tortor porta blandit scelerisque ac nunc. Etiam cursus leo in leo tristique, consequat porta dui egestas. In imperdiet congue mollis. Morbi hendrerit libero a aliquam hendrerit. Duis ultrices hendrerit interdum. Donec sed consectetur augue. Praesent consectetur pretium tortor ac molestie. Mauris vel sagittis neque. Cras dictum nibh sit amet tellus lacinia aliquam. Fusce non neque sed velit lobortis dapibus at eget nisl.&lt;/p&gt;
+
+&lt;p&gt;Fusce eu molestie sem, a posuere nisi. Sed congue turpis erat, et efficitur sapien molestie vel. Aliquam finibus ullamcorper libero. Etiam auctor, nibh in dignissim laoreet, neque ipsum aliquet orci, ac ultricies odio odio sit amet ipsum. Ut sed lobortis felis, eu interdum lacus. Fusce non mollis orci. Proin erat augue, efficitur in malesuada vitae, egestas nec orci. Pellentesque id nulla nisl. Quisque lectus eros, vestibulum semper ligula quis, vestibulum fringilla enim. Donec consequat, lorem sed varius ullamcorper, lectus lectus interdum felis, id pellentesque massa dolor at dui. Sed iaculis augue nec neque tincidunt, sollicitudin maximus turpis aliquet. Mauris nec tellus elementum, placerat velit eu, facilisis eros.&lt;/p&gt;
+
+&lt;p&gt;Mauris bibendum, nisl at porta suscipit, lacus ante suscipit nibh, a tempor velit urna in arcu. Suspendisse eu quam eleifend, cursus tellus ut, ultricies lacus. Nulla facilisi. Cras volutpat eros eget rhoncus posuere. Mauris mollis lobortis placerat. Curabitur at erat vitae lectus volutpat bibendum tempor et ligula. Vestibulum urna ante, convallis at mi a, fringilla porta metus. Nam id nulla ut ante commodo condimentum. Nunc non erat felis. Phasellus vel nunc nec turpis tempus ultricies id quis purus. Aliquam scelerisque, nisi ut ultrices ultricies, nulla massa lacinia orci, id venenatis erat elit vitae purus. Vivamus ut scelerisque diam.&lt;/p&gt;
 </content>
  </entry>
  
