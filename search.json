@@ -4,7 +4,7 @@
       "title"    : "Introducing Poole",
       "category" : "",
       "tags"     : "",
-      "url"      : "//blog/2014/01/02/introducing-poole/",
+      "url"      : "//blog/2014/01/02/introducing-poole.html",
       "date"     : "2014-01-02 00:00:00 +0530"
     } ,
   
@@ -12,7 +12,7 @@
       "title"    : "Example content",
       "category" : "",
       "tags"     : "",
-      "url"      : "//blog/2014/01/01/example-content/",
+      "url"      : "//blog/2014/01/01/example-content.html",
       "date"     : "2014-01-01 00:00:00 +0530"
     } ,
   
@@ -20,7 +20,7 @@
       "title"    : "What&#39;s Jekyll?",
       "category" : "",
       "tags"     : "",
-      "url"      : "//blog/2013/12/31/whats-jekyll/",
+      "url"      : "//blog/2013/12/31/whats-jekyll.html",
       "date"     : "2013-12-31 00:00:00 +0530"
     } ,
   
@@ -28,7 +28,7 @@
       "title"    : "What&#39;s Jekyll?",
       "category" : "",
       "tags"     : "",
-      "url"      : "//blog/2013/12/31/lorem-ipsum/",
+      "url"      : "//blog/2013/12/31/lorem-ipsum.html",
       "date"     : "2013-12-31 00:00:00 +0530"
     } 
   

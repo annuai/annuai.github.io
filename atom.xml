@@ -4,7 +4,7 @@
  <title>Annu</title>
  <link href="http://annu.co/atom.xml" rel="self"/>
  <link href="http://annu.co/"/>
- <updated>2015-04-15T10:18:16+05:30</updated>
+ <updated>2015-04-15T21:46:26+05:30</updated>
  <id>http://annu.co</id>
  <author>
    <name>Annuai</name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>Introducing Poole</title>
-   <link href="http://annu.co//blog/2014/01/02/introducing-poole/"/>
+   <link href="http://annu.co//blog/2014/01/02/introducing-poole.html"/>
    <updated>2014-01-02T00:00:00+05:30</updated>
    <id>http://annu.co/blog/2014/01/02/introducing-poole</id>
    <content type="html">&lt;p&gt;&lt;em&gt;The Strange Case of Dr. Jekyll and Mr. Hyde&lt;/em&gt; tells the story of a lawyer investigating the connection of two persons, Dr. Henry Jekyll and Mr. Edward Hyde. Chief among the novel’s supporting cast is a man by the name of Mr. Poole, Dr. Jekyll’s loyal butler.&lt;/p&gt;
@@ -61,7 +61,7 @@
  
  <entry>
    <title>Example content</title>
-   <link href="http://annu.co//blog/2014/01/01/example-content/"/>
+   <link href="http://annu.co//blog/2014/01/01/example-content.html"/>
    <updated>2014-01-01T00:00:00+05:30</updated>
    <id>http://annu.co/blog/2014/01/01/example-content</id>
    <content type="html">&lt;div class=&quot;message&quot;&gt;
@@ -207,7 +207,7 @@
  
  <entry>
    <title>What's Jekyll?</title>
-   <link href="http://annu.co//blog/2013/12/31/whats-jekyll/"/>
+   <link href="http://annu.co//blog/2013/12/31/whats-jekyll.html"/>
    <updated>2013-12-31T00:00:00+05:30</updated>
    <id>http://annu.co/blog/2013/12/31/whats-jekyll</id>
    <content type="html">&lt;p&gt;&lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; is a static site generator, an open-source tool for creating simple yet powerful websites of all shapes and sizes. From &lt;a href=&quot;https://github.com/jekyll/jekyll/blob/master/README.markdown&quot;&gt;the project’s readme&lt;/a&gt;:&lt;/p&gt;
@@ -222,7 +222,7 @@
  
  <entry>
    <title>What's Jekyll?</title>
-   <link href="http://annu.co//blog/2013/12/31/lorem-ipsum/"/>
+   <link href="http://annu.co//blog/2013/12/31/lorem-ipsum.html"/>
    <updated>2013-12-31T00:00:00+05:30</updated>
    <id>http://annu.co/blog/2013/12/31/lorem-ipsum</id>
    <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus rutrum viverra nunc eu tempus. Nunc condimentum libero lectus, sed tempor nulla scelerisque at. Pellentesque et leo quis dui finibus rutrum a sit amet diam. Sed blandit turpis eget tincidunt rutrum. Integer fermentum condimentum luctus. Aliquam erat volutpat. Suspendisse leo turpis, vulputate sed condimentum ac, lacinia vitae metus. Fusce enim arcu, tristique consectetur ante ut, consequat vulputate mauris. Donec ornare eros et augue auctor egestas. Integer vitae molestie ligula, vitae pulvinar nisl. Aenean viverra risus faucibus magna dictum gravida. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In aliquam suscipit neque, quis tempus arcu porttitor vel. Donec et aliquet tellus. Pellentesque tellus odio, pretium eu eros sed, varius tincidunt ex. Praesent et dolor non purus aliquet semper ut eu magna.&lt;/p&gt;

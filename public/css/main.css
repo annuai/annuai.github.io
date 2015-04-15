@@ -207,7 +207,27 @@ if it's not present, don't show loader */
     padding: 30px;
     box-shadow: 0 0 5px black;
     font-size: 31px;
-    text-align: center;
+    font-family:'serif'; 
+}
+.sidebar h1{
+  font-size: 30px;
+  font-family:'verdana'; 
+}
+.sidebar li span{
+  display: block;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+.sidebar a{
+  color: #FFF;
+  text-decoration: none;
+}
+.sidebar li{
+  list-style: none;
+  text-align: left;
+}
+.sidebar.close-btn{
+  font-family: 'verdana';
 }
 #search{
   width: 900px;
