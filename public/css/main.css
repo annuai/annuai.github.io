@@ -91,6 +91,11 @@ if it's not present, don't show loader */
 	#main{
 		padding: 20% 0;
 	}
+  .centered{
+        position: relative;
+        top: 50%;
+        transform:translateY(-50%);
+  }
 	#footer{
 		background: #F3A45B;
     color: #2B4654; 
@@ -231,6 +236,7 @@ if it's not present, don't show loader */
 .travel{
   background:#E6D9B7;
   padding:60px 50px;
+  max-width: 800px !important;
   border-radius:10px;
   margin-left:auto;
   margin-right:auto;
@@ -362,6 +368,10 @@ if it's not present, don't show loader */
   }
     .socialcontacts{
     background:url('/public/images/socialbg-small.png') bottom right no-repeat #3d7ba0;
+  }
+  .slide{
+    height: auto;
+    overflow:auto;
   }
 }
 @media screen and (max-width: 750px){
