@@ -263,6 +263,7 @@ if it's not present, don't show loader */
 }
 .socialcontacts{
   background:url('/public/images/socialbg.png') bottom right no-repeat #3d7ba0;
+  background-size: 40% auto;
 }
 .pllimg img{
   padding-left: 30px;
@@ -386,9 +387,6 @@ if it's not present, don't show loader */
   .theworld{
     padding-left: 50px;
   }
-    .socialcontacts{
-    background:url('/public/images/socialbg-small.png') bottom right no-repeat #3d7ba0;
-  }
   .slide{
     height: auto;
     overflow:auto;
@@ -406,8 +404,5 @@ if it's not present, don't show loader */
   }
   .head img{
     width: 500px;
-  }
-  .socialcontacts{
-    background:url('/public/images/socialbg.png') bottom right no-repeat #3d7ba0;
   }
 }
