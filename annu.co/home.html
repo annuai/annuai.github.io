@@ -1,0 +1,370 @@
+<html>
+<head>
+<title>Annu - Design in its Dimensions</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<style type="text/css">
+html,body{
+	background: #fcfbf7;
+	background-image: url('noise.png');
+	background-repeat: repeat;
+	margin: 0;
+	padding: 0;
+	width: auto;
+	width: 100%;
+	height: 100%;
+}
+::selection {
+	background: #1782ED; /* Safari */
+	color: #fff;
+	}
+::-moz-selection {
+	background: #1782ED; /* Firefox */
+		color: #fff;
+
+}
+#header-bar{
+	border-bottom: 1px solid #1782ED;
+	background: #1782ED; /* Old browsers */
+	background: rgb(73,192,240); /* Old browsers */
+background-image: url('noise2.png'),url('Selection_001.png');
+background-repeat: repeat; 
+display: none;
+}
+#header-bar .header-content{
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	height: 70px;
+}
+#header-bar .head{
+	text-shadow: -1px 0px 1px rgba(0, 192, 240, 1);
+	font-family:ubuntu;
+	font-size:36px; 
+	color: #fff;
+	padding: 14px 19px;
+	float: left;
+}
+#header-bar .tagline{
+	font-size: 16px;
+	color: #fff;
+	font-family: ubuntu;
+	text-align: right;
+	margin-top: 30px;
+	margin-right: 10px;
+	float: right;
+}
+#sub-header-bar{
+	display: none;
+	height: 50px;
+	background: #fff;
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+	border-bottom:2px solid #7db9e8;
+	background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+
+}
+#main{
+	margin-left: 320px;
+	width: 900px;
+	margin-top: 40px
+}
+
+#content{
+/*	margin: 80px 0 0; */
+	padding:20px;
+	padding-top: 40px;
+	font-family: serif;
+	/* background: #fff;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+-moz-box-shadow:    0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+box-shadow:         0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+*/
+}
+#content .head{
+	font-size: 32px;
+	font-weight: 500;
+}
+#content .subhead{
+	font-size: 22px;
+}
+#content .cat{
+	padding: 5px 0 0 0;
+	font-size: 14px;
+}
+#content .date-hold{
+	background-image: url('date-stamp.png');
+	background-repeat: no-repeat;
+	height: 50px;
+	width: 100px;
+	float: right;
+	margin: -80px 20px 0;
+
+
+}
+#content .date{
+	font-size: 13px;
+	padding: 20px 12px 0;
+
+/* Safari */
+-webkit-transform: rotate(-5deg);
+
+/* Firefox */
+-moz-transform: rotate(-5deg);
+
+/* IE */
+-ms-transform: rotate(-5deg);
+
+/* Opera */
+-o-transform: rotate(-5deg);
+
+/* Internet Explorer */
+filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+#content .content{
+	font-family: "Merriweather",Georgia,Cambria,"Times New Roman",Times,serif;
+letter-spacing: 0.01rem;
+font-weight: 100;
+font-style: normal;
+font-size: 19px;
+line-height: 1.8;
+text-rendering: optimizelegibility;
+}
+#footer{
+	background: #1782ED; /* Old browsers */
+	background: rgb(73,192,240); /* Old browsers */
+	background-image: url('noise2.png'),url('Selection_001.png');
+	background-repeat: repeat;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+-moz-box-shadow:    0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+box-shadow:         0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+	}
+#footer .content{
+	text-shadow: -1px 0px 1px rgba(0, 192, 240, 1);
+	margin-left: auto;
+	margin-right: auto;
+	width: 900px;
+	color: #fff;
+	padding: 10px; 
+	font-family: verdana;
+}
+@media screen and (max-width: 900px) {
+#main, #content,#menu,#footer .content, #header-bar .header-content{
+	width:auto;
+}
+#content{
+	margin: 20px 0 0;
+}
+}
+@media screen and (max-width: 480px) {
+#menu li{
+	font-size: 16px;
+}
+	}
+	#sidebar{
+width:5px;
+background: #000;
+float: left;
+position: fixed;
+	}
+	#sidebar .head{
+		font-size: 28px;
+		font-family: ubuntu;
+		background: #000;
+		padding: 10px 10px 10px 19px;
+		color: #fff;	
+		border-right:2px solid #D8d8d8; 
+		margin-top: -5px;
+		float: left;
+		width: 100px;
+
+	}
+	#border-top{
+		height: 3px;
+		width: 100%;
+		border-bottom: 2px solid #D8d8d8;
+		background: #000;
+		visibility: hidden;
+	}
+	#menu{
+		width: auto;
+		float: left;
+		padding: 4px 0 0;
+	}
+#menu ul, #menu li{
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#menu li{
+	color:#3A8ED0;
+	float: left;
+	margin: 0;
+	padding: 10px 11px 7px 10px;
+}
+#menu li:hover{
+	cursor: pointer;
+	background: #1EAAFF;
+	color:#fff;
+
+}
+#menu-bg{
+	background: #1782ED;
+	margin: -10px 0 0 120px;
+	height: 57px;
+	width: 212px;
+	float: left;
+	position: fixed;
+		background-image: url('noise2.png'),url('Selection_001.png');
+	background-repeat: repeat;
+	border-top: 1px solid #1782ED;
+}
+#search-bar{
+	float: left;
+	position: fixed;
+	padding: 8px 15px 10px;
+	width: 100%;
+	height: 35px;
+	margin: -5px 0 0 332px;
+	background: #fff;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(221, 221, 221, 0.75);
+-moz-box-shadow:    0px 0px 5px 0px rgba(221, 221, 221, 0.75);
+box-shadow:         0px 0px 5px 0px rgba(221, 221, 221, 0.75);
+}
+#search-bar input{
+	border: none;
+	font-size: 23px;
+	width: 100%;
+}
+#search-bar .tooltip{
+	visibility: hidden;
+}
+#related{
+	margin: 10px 0;
+	height: 150px;
+		background: #fff;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+-moz-box-shadow:    0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+box-shadow:         0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+
+}
+#related .related-content{
+	width: 280px;
+	height: 150px;
+	float: left;
+}
+#related img{
+	width: 150px;
+	height: 150px;
+	padding-right: 20px;
+	float: left;
+}
+#related .related-content-text{
+		margin: 10px;
+		text-transform: uppercase;
+		font-family: ubuntu;
+		color: #656565;
+}
+#share{
+	margin: 10px 0 0 10px;
+	display: inline-block;
+	height: 44px;
+	background: #d6d6d6;
+	padding:0 5px 0 0;
+}
+#share .share-tab{
+	color: #fff;
+	width: 140px;
+	text-align: left;
+	display: inline-block;
+	height: auto;
+	margin: -3px 0 0 -5px;
+	padding: -10px 0 0;
+	float: left;
+}
+#share .share-tab-text{
+	margin: 15px 15px 0 0;
+	text-transform: uppercase;
+	font-family: ubuntu;
+	float: right;
+}
+#end{
+			background: #fff;
+-webkit-box-shadow: 0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+-moz-box-shadow:    0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+box-shadow:         0px 0px 5px 0px rgba(229, 229, 229, 0.75);
+margin: 10px 0 0;
+padding:10px;
+font-family: ubuntu;
+text-transform: uppercase;
+color: #A10007;
+}
+</style>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/typed.min.js"></script>
+<script type="text/javascript">
+$(function(){
+      $("#content").typed({
+        strings: ["Hi.<br />I'm Annuai","I'm a Programmer<br />You can describe me as a coder.","I'm also a designer.<br />The libran who has a thousand ideas","I'm also a DOER,<br />like the one in the Lenovo ad"],
+        contentType: 'html',
+        typeSpeed: 0.1
+      });
+  });
+</script>
+</head>
+<body>
+	<div id="border-top">
+	</div>
+<div id="header-bar">
+	<div class="header-content">
+<div class="head">Annu</div>
+<div class="tagline">
+	BLOG
+	</div>
+	</div>
+</div>
+<div id="sub-header-bar">
+<div id="menu">
+	<ul>
+		<li><img src="search1.png" style="margin:-14px -22px 0 0;" height="52" /></li>
+		<li>ABOUT</li>
+		<li>WORK</li>
+		<li>BLOG</li>
+	</ul>
+</div>
+</div>
+<div id="sidebar">
+<div class="head">
+ANNU</div>
+<div id="menu-bg">
+		<div id="menu">
+		<ul>
+		<li><img src="toolbar_home.png" height="32" /></li>
+		<li><img src="toolbar_applications.png" height="32" /></li>
+		<li><img src="toolbar_computer.png" height="32" /></li>
+		<li><img src="toolbar_connect.png" height="32" /></li>
+	</ul>
+	</div>
+</div>
+<div id="search-bar">
+	<input type="text" class="search" placeholder="type to search..." />
+</div>
+</div>
+<div id="main">
+<div id="content">
+
+</div>
+</div>
+<div id="footer">
+	<div class="content">
+		Made with <div style="font-family:'sosa'; display:inline-block;">c</div> in Kerala, India Annu.co 2014
+	</div>
+	</div>
+</body>
+</html>
