@@ -2,7 +2,14 @@ body,html{
 		padding: 0;
 		margin: 0;
 		color: #FFF;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 	}
+  body{
+    overflow-x:hidden;
+  }
 @font-face {
     font-family: 'fontin'; /*a name to be used later*/
     src: url('/public/fonts/Fontin-Regular.ttf'); /*URL to font*/
@@ -51,17 +58,6 @@ if it's not present, don't show loader */
 		font-weight: 600;
     padding-top: 30vh;
 	}
-  #tagline-small{
-    font-family: 'SUNN';
-    font-size: 60px;
-    color: #FFF;
-    letter-spacing: 6px;
-    vertical-align: middle;
-    font-weight: 600;
-    padding-top: 25vh;
-    padding-left: 50px;
-    display: none;
-  }
 	#content{
 		font-size: 16px;
 		color: #000;
@@ -97,7 +93,6 @@ if it's not present, don't show loader */
         transform:translateY(-50%);
   }
 	#footer{
-		background: #F3A45B;
     color: #2B4654; 
 	}
 	#footer .footer-menu{
@@ -106,7 +101,6 @@ if it's not present, don't show loader */
 		height: 24px;
 		text-transform: uppercase;
 		font-family:'Facebook Letter Faces';
-    src: url(http://annuai) format("truetype");
 	}
 	#footer .footer-menu ul{
 		padding: 0;
@@ -265,11 +259,15 @@ if it's not present, don't show loader */
   background:url('/public/images/socialbg.png') bottom right no-repeat #3d7ba0;
   background-size: 40% auto;
 }
-.pllimg img{
-  padding-left: 30px;
-}
 .travelheader{
   width: auto !important;
+}
+.pllver{
+  display: none;
+  height: 80vh;
+}
+#tagline-small{
+  display: none;
 }
 
 .spinner {
@@ -338,71 +336,78 @@ if it's not present, don't show loader */
   from { -webkit-transform: rotate(0deg);    }
   to   { -webkit-transform: rotate(-360deg); }
 }
-
-
- @media screen and (max-width: 900px) {
-  #container{
-    width: 700px;
-  }
-  .travel{
-    margin-top: 100px;
-     padding:40px;
-     width:80%;
-     border-radius:10%;
-  }
-}
-@media screen and (max-width: 480px) {
-   #container{
-    width: 470px;
-  }
-  #tagline{
-    display: none;
-  }
-  #tagline-small{
-    display: block;
-  }
-  #logo{
-    height: 30px;
-    padding-left: 30px;
-  }
-  .head img{
-    width: 380px;
-  }
-  .pll span{
-    display: block;
-    padding-left: 0;
-  }
-  .pllimg{
-        padding-top: 3vh;
-  }
-  .pllimg img{
-    padding-left: 10px;
-    padding-bottom: 20px;
-  }
-  .pll span{
-    display: block;
-    padding-left: 0 !important;
-    text-align: center;
-  }
-  .theworld{
-    padding-left: 50px;
-  }
-  .slide{
-    height: auto;
-    overflow:auto;
-  }
-}
-@media screen and (max-width: 750px){
+@media screen and (max-width: 400px){
   .pll span{
     display: block;
     padding-left: 0 !important;
     text-align: center;
     padding-top: 10px;
   }
-    #container{
-    width: 600px;
+  #container{
+    width: 300px;
+  }
+  #main{
+    padding: 50px 0 0;
+  }
+   #content{
+    width: 100%;
+  }
+  #content .paragraph{
+    padding:0 10px 0 !important;
   }
   .head img{
-    width: 500px;
+    width: 300px;
+  }
+    #menu{
+    margin-top: 30px;
+    margin-right: 0px;
+  }
+  #menu .menu{
+    margin-left: 20px;
+  }
+    #tagline{
+    display: none;
+  }
+  #logo{
+    height:30 !important; 
+  }
+  #tagline-small{
+    display: block;
+    padding-top: 150px;
+    padding-left: 0px;
+  }
+  .travel{
+    padding:20px;
+    width:300px !important;
+  }
+  .travel .paragraph{
+    margin-top: 0 !important;
+  }
+  .travel .theworld{
+    padding-left: 50px;
+  }
+  .hellome{
+    padding-top: 120px;
+    margin-bottom: 20px;
+  }
+  #social{
+    font-size: 11px;
+  }
+      .socialcontacts{
+    background-size: 70% auto;
+  }
+  #desk img{
+    margin-top: -20px;
+    margin-left: -30px;
+    height: 30vh !important;
+  }
+  .pllmain{
+    padding-top: 0 !important;
+  }
+    .pllhor{
+    display: none;
+  }
+  .pllver{
+    display: block;
   }
 }

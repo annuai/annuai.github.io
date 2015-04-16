@@ -26,28 +26,112 @@
   <link rel="alternate" type="application/atom+xml" title="Annu" href="/atom.xml">
   <script type="text/JavaScript" src="/public/js/script.js"></script>
 </head>
+<div class="header">
+  <div id="header" style="height:60px;">
+  <div id="container">
+  <div id="menu" style="margin-top:19px;"><img src="/public/images/search.png" class="menu search-btn" height="23" /><a href="#" class="btn btn-primary" data-action="toggle" data-side="right"><img src="/public/images/menu.png" class="menu" height="24" /></a></div>
+  <a href="/"><img src="/public/images/text4171.png" height="25" id="logo" style="top:10px;padding-top:10px;padding-botom:0px;margin-bottom:0px;" /></a>
+  <div id="social" style="margin-top:23px;">
+  <a href="/">HOME</a> &nbsp; <a href="/blog">BLOG</a> &nbsp; PROJECTS &nbsp;
+  </div>
+  </div>
+  </div>
+  </div>
+        <div id="search">
+      <div id="search-demo-container">
+      <input type="text" id="search-input" class="search" placeholder="Search...">
+      <span class="search-close-btn">X</span>
+      <ul id="results-container"></ul>
+    </div>
+      </div>
+    <script type="text/javascript">
+      SimpleJekyllSearch.init({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        dataSource: '/search.json',
+        searchResultTemplate: '<li><a href="http://annu.co{url}" title="{desc}">{title}</a></li>',
+        noResultsText: 'No results found',
+        limit: 10,
+        fuzzy: false,
+      })
+    </script>
+          <script type="text/javascript">
+      $(document).ready(function () {
+        $('#search').hide();
+        $('.search-btn').click(function(){
+          $('#header').animate({height:'200'});
+          $('#overlay').show();
+          $('.search-btn').addClass("search-btn-clicked");
+          $('#search').fadeIn(1000);
+          $('#search .search').focus();
+          $('#header #container').hide();
+        });
+        $('.search-close-btn').click(function(){  
+          $('#search').hide();
+          $('#header #container').show();
+          var winheight=$(window).height();
+          $('#header').animate({height: winheight*0.11});
+        });
+        $('.btn').click(function(){
+          $('#slide-numbers').hide();
+        });
+        });
+      </script>
 
+            <script type="text/javascript">
+      // Sidebar on right side
+      $(document).ready(function () {
+    // All sides
+    var sides = ["left", "top", "right", "bottom"];
+    $("h1 span.version").text($.fn.sidebar.version);
+
+    // Initialize sidebars
+    for (var i = 0; i < sides.length; ++i) {
+        var cSide = sides[i];
+        $(".sidebar." + cSide).sidebar({side: cSide});
+    }
+
+    // Click handlers
+    $(".btn[data-action]").on("click", function () {
+        var $this = $(this);
+        var action = $this.attr("data-action");
+        var side = $this.attr("data-side");
+        $(".sidebar." + side).trigger("sidebar:" + action);
+        return false;
+    });
+});
+      </script>
+
+      <div class="sidebar right">
+<h1>LATEST</h1>
+
+      <li><a href="/blog/2014/01/02/introducing-poole.html">Introducing Poole and other things that matter to us</a><span class="date">2 January 2014</span></li>
+      
+<h1>RECENT POSTS</h1>
+
+      <li><a href="/blog/2014/01/01/example-content.html">Example content</a><span class="date">1 January 2014</span></li>
+      
+      <li><a href="/blog/2013/12/31/whats-jekyll.html">What's Jekyll?</a><span class="date">31 December 2013</span></li>
+      
+      <li><a href="/blog/2013/12/31/lorem-ipsum.html">What's Jekyll?</a><span class="date">31 December 2013</span></li>
+      
+      <a href="#" class="btn btn-danger close-btn" data-action="close" data-side="right"><span>x</span></a>
+      </div>
 
   <body>
 
 
       <main>
          <body>
-<div class="header">
-  <div id="header" style="height:80px;">
+ <style type="text/css">
+ #content .paragraph{
+  color:#2B4654; 
+  }
+  </style>
   <div id="container">
-  <div id="menu"><img src="/public/images/search.png" class="menu" height="23" /><img src="/public/images/menu.png" class="menu" height="21" /></div>
-  <img src="/public/images/text4171.png" height="25" id="logo" style="vertical-align:baseline;" />
-  <div id="social">
-  HOME &nbsp; BLOG &nbsp; PROJECTS &nbsp;
-  </div>
-  </div>
-  </div>
-  </div>
-  <div id="container">
-    <div id="main">
+    <div id="main" style="padding-top:100px;">
       <div id="content">
-      <div class="head">
+      <div class="head" style="font-size:62px;">
       Example content
       </div>
       <div class="date">01 Jan 2014</div>
@@ -203,7 +287,7 @@
       <li>
         <h3>
           <a href="http://annu.co/blog/2014/01/02/introducing-poole.html">
-            Introducing Poole
+            Introducing Poole and other things that matter to us
             <small><time datetime="2014-01-02T00:00:00+05:30">02 Jan 2014</time></small>
           </a>
         </h3>
@@ -230,11 +314,13 @@
   </ul>
 </aside>
 
+
+
       </main>
 
       <footer class="footer">
         <small>
-          &copy; <time datetime="2015-04-15T23:38:26+05:30">2015</time>. All rights reserved.
+          &copy; <time datetime="2015-04-16T21:25:25+05:30">2015</time>. All rights reserved.
         </small>
       </footer>
     </div>
