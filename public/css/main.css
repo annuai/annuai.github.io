@@ -372,7 +372,11 @@ if it's not present, don't show loader */
     height:30 !important; 
   }
   #tagline-small{
+    padding-top: 20vh;
     display: block;
+  }
+  #tagline-small img{
+    height: 30vh;
   }
   .travel{
     padding:20px;
