@@ -336,7 +336,7 @@ if it's not present, don't show loader */
   from { -webkit-transform: rotate(0deg);    }
   to   { -webkit-transform: rotate(-360deg); }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 720px){
   .pll span{
     display: block;
     padding-left: 0 !important;
@@ -373,8 +373,6 @@ if it's not present, don't show loader */
   }
   #tagline-small{
     display: block;
-    padding-top: 150px;
-    padding-left: 0px;
   }
   .travel{
     padding:20px;
@@ -385,10 +383,6 @@ if it's not present, don't show loader */
   }
   .travel .theworld{
     padding-left: 50px;
-  }
-  .hellome{
-    padding-top: 120px;
-    margin-bottom: 20px;
   }
   #social{
     font-size: 11px;
