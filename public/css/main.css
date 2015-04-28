@@ -259,6 +259,9 @@ if it's not present, don't show loader */
   background:url('/public/images/socialbg.png') bottom right no-repeat #3d7ba0;
   background-size: 40% auto;
 }
+ #contact .social-icon{
+    height: 24px;
+  }
 .travelheader{
   width: auto !important;
 }
@@ -336,7 +339,10 @@ if it's not present, don't show loader */
   from { -webkit-transform: rotate(0deg);    }
   to   { -webkit-transform: rotate(-360deg); }
 }
-@media screen and (max-width: 720px){
+@-o-viewport {
+    width: 320px;
+  }
+@media screen and (max-width: 480px){
   .pll span{
     display: block;
     padding-left: 0 !important;
@@ -344,10 +350,15 @@ if it's not present, don't show loader */
     padding-top: 10px;
   }
   #container{
-    width: 300px;
+    width: 280px;
   }
   #main{
     padding: 50px 0 0;
+  }
+    .slide{
+    height: 700px !important;
+    max-height: 700px !important;
+    overflow:hidden;
   }
    #content{
     width: 100%;
@@ -356,11 +367,15 @@ if it's not present, don't show loader */
     padding:0 10px 0 !important;
   }
   .head img{
-    width: 300px;
+    width: 250px;
+    padding-left: 10px;
   }
     #menu{
     margin-top: 30px;
     margin-right: 0px;
+  }
+  #menu img{
+    height: 20px;
   }
   #menu .menu{
     margin-left: 20px;
@@ -369,14 +384,18 @@ if it's not present, don't show loader */
     display: none;
   }
   #logo{
-    height:30 !important; 
+    height:25px !important; 
+    padding-left: 10px;
   }
   #tagline-small{
-    padding-top: 20vh;
+    padding:100px 0px 100px 10px;
     display: block;
   }
   #tagline-small img{
     height: 30vh;
+  }
+  .hellome .head{
+    padding-bottom: 20px;
   }
   .travel{
     padding:20px;
@@ -407,5 +426,17 @@ if it's not present, don't show loader */
   }
   .pllver{
     display: block;
+    padding-top: 30%;
+    height: 70% !important;
+  }
+  #contact a{
+    font-size: 21px;
+  }
+  #footer .footer-menu{
+    font-size: 13px;
+  }
+    #footer .footer-menu-container{
+      display: none;
+  }
   }
 }
