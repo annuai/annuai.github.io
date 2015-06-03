@@ -64,6 +64,10 @@ if it's not present, don't show loader */
     margin-right: 15%;
     margin-left: 5%;
 	}
+#content img{
+    max-width: 100%; 
+    height: auto;
+    } 
 	#content .head{
 		font-size: 100px;
 		font-weight: 600;
