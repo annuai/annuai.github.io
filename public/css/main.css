@@ -71,8 +71,10 @@ if it's not present, don't show loader */
 	#content .head{
 		font-size: 100px;
 		font-weight: 600;
-		font-family: Helvetica,Arial,sans-serif;
+		font-family: 'fontin';
 		color: #FF4A4E;
+    line-height: 50px;
+    margin-bottom: 20px;
 	}
 	#content .paragraph{
 		font-size:18px;
