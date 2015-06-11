@@ -299,6 +299,12 @@ if it's not present, don't show loader */
   animation: rotate 4s steps(4) infinite;
   -webkit-animation: rotate 4s steps(4) infinite;
 }
+pre{
+  border:1px solid #F3A45B;
+  border-left: 10px solid #F3A45B;
+  padding: 10px 10px 10px 15px;
+  font-family: 'DejaVu Sans Mono';
+}
 
 .box {
   position: absolute;
