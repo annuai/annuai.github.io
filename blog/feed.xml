@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title></title>
+		<description></description>		
+		<link>http://annu.co</link>
+		<atom:link href="http://annu.co/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>A Refresh to indicator-stickynotes</title>
+				        
+				
+					<description>&lt;p&gt;I love good looking apps.As a budding UI designer, I should.I was a chronic user of Sticky Notes on Windows, when I had been a Windows User.Sticky Notes helped me save a lot of paper and got me to memorize my things in time.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Thu, 11 Jun 2015 00:00:00 +0530</pubDate>
+				<link>http://annu.co/blog/2015/06/11/Stickynotes-refreshed.html</link>
+				<guid isPermaLink="true">http://annu.co/blog/2015/06/11/Stickynotes-refreshed.html</guid>
+			</item>
+		
+			<item>
+				<title>Premam - A review by a novice</title>
+				        
+				
+					<description>&lt;p&gt;The new movie in town had been hitting hundreds all week long.Premam by Alphonse Putharen is not really a one-of-a-kind movie at all.But, it still packs a whole lot of punch in the package.It has something for everyone - and that is what makes the movie a real good one.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Wed, 03 Jun 2015 00:00:00 +0530</pubDate>
+				<link>http://annu.co/blog/2015/06/03/Premam-A-review-by-a-novice.html</link>
+				<guid isPermaLink="true">http://annu.co/blog/2015/06/03/Premam-A-review-by-a-novice.html</guid>
+			</item>
+		
+			<item>
+				<title>Last Day at ASAP</title>
+				        
+				
+					<description>&lt;p&gt;I had been doing a programming course that I had enrolled for during my school days for the vacation.it had been extended a lot of times until it started on 20th of  last month.&lt;/p&gt;
+
+</description>
+				
+				<pubDate>Tue, 02 Jun 2015 00:00:00 +0530</pubDate>
+				<link>http://annu.co/blog/2015/06/02/Last-Day-At-ASAP.html</link>
+				<guid isPermaLink="true">http://annu.co/blog/2015/06/02/Last-Day-At-ASAP.html</guid>
+			</item>
+		
+	</channel>
+</rss>
