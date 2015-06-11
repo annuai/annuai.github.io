@@ -18,6 +18,10 @@ body,html{
     font-family: 'Facebook Letter Faces'; /*a name to be used later*/
     src: url('/public/fonts/facebook-letter-faces.ttf'); /*URL to font*/
 }
+@font-face {
+    font-family: 'Lato'; /*a name to be used later*/
+    src: url('/public/fonts/Lato.ttf'); /*URL to font*/
+}
 
 	/* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
@@ -83,10 +87,12 @@ if it's not present, don't show loader */
 		font-family: 'fontin';
 		line-height: 24px;
 		letter-spacing: 0px;
-    padding:30px 0px 0;
+    padding:0px 0px 0 5px;
   }
   #content  .date{
+    font-family: 'Lato';
     margin-left: 5px;
+    text-transform: capitalize;
   }
 	#content .paragraph:firsletter
 	{
