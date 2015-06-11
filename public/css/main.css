@@ -271,6 +271,13 @@ if it's not present, don't show loader */
 .travelheader{
   width: auto !important;
 }
+  .pllimg{
+    display: table;
+    vertical-align:middle;
+    margin-left:auto;
+    margin-right:auto;
+    width:900px;
+  }
 .pllver{
   display: none;
   height: 80vh;
@@ -360,11 +367,14 @@ if it's not present, don't show loader */
     max-height: 700px !important;
     overflow:hidden;
   }
-   #content{
+  #content{
     width: 100%;
   }
   #content .paragraph{
-    padding:0 50px 0 30px !important;
+    padding:0 60px 0 0px !important;
+  }
+  .paginate{
+    display: none;
   }
   .head img{
     width: 300px;
@@ -422,13 +432,22 @@ if it's not present, don't show loader */
   .pllmain{
     padding-top: 0 !important;
   }
-    .pllhor{
+  .pllhor{
     display: none;
   }
   .pllver{
     display: block;
-    padding-top: 30%;
-    height: 70% !important;
+    padding-top: 20vh;
+    height:60vh !important;
+    position: absolute;
+    left: 50%;
+  }
+  .pllimg{
+    display: table;
+    vertical-align:middle;
+    margin-left:auto;
+    margin-right:auto;
+    width:auto !important;
   }
   #contact a{
     font-size: 21px;
