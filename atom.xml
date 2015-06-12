@@ -4,7 +4,7 @@
  <title>Annu</title>
  <link href="http://annu.co/atom.xml" rel="self"/>
  <link href="http://annu.co/"/>
- <updated>2015-06-12T08:47:57+05:30</updated>
+ <updated>2015-06-12T09:51:50+05:30</updated>
  <id>http://annu.co</id>
  <author>
    <name>Annuai</name>
@@ -29,7 +29,8 @@
 
 &lt;p&gt;And I hope this works for you too.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/fbaYkFz.jpg&quot; alt=&quot;Indicator-Stickynotes-Refresh&quot; title=&quot;The new look of stickynotes&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&quot;Indicator-Stickynotes-Before&quot; src=&quot;http://i.imgur.com/SIPqpgI.png&quot; title=&quot;The Old look of stickynotes&quot; width=&quot;330&quot; /&gt;
+&lt;img alt=&quot;Indicator-Stickynotes-Refresh&quot; src=&quot;http://i.imgur.com/fbaYkFz.jpg&quot; title=&quot;The New look of stickynotes&quot; width=&quot;330&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;I have made a bash script, so that all you need to do is to run it.&lt;/p&gt;
 
