@@ -36,7 +36,7 @@
   <div id="menu" style="margin-top:19px;"><img src="/public/images/search.png" class="menu search-btn" height="23" width="21" /><a href="#" class="btn btn-primary" data-action="toggle" data-side="right"><img src="/public/images/menu.png" class="menu" height="24" width="29" /></a></div>
   <a href="/"><img src="/public/images/text4171.png" height="30" id="logo" style="top:10px;padding-top:10px;padding-botom:0px;margin-bottom:0px;" /></a>
   <div id="social" style="margin-top:23px;">
-  <a href="/">HOME</a> &nbsp; <a href="/blog">BLOG</a> &nbsp; PROJECTS &nbsp;
+  <a href="/">HOME</a> &nbsp; <a href="/blog">BLOG</a> &nbsp; <a onclick="alert('You thought I did this overnight? Gimme some time.Im still working on it')">PROJECTS</a> &nbsp;
   </div>
   </div>
   </div>
@@ -175,25 +175,110 @@
     padding:15px 10px 0;
     margin: 0;
   }
-  .pagination{
-    float: left;
+  #pagination{
+    margin-top: 70px;
   }
+  #pagination,#pagination a{
+    text-transform: capitalize;
+    color: #FFF;
+    font-family: 'Lato';
+  }
+  #pagination .previous,#pagination .next,#pagination .page_number{
+    padding: 5px 10px;
+    margin: 0;
+    background: #0089AE;
+    background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #0088AE),
+  color-stop(1, #287082)
+);
+background-image: -o-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -moz-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -webkit-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -ms-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: linear-gradient(to bottom, #0088AE 0%, #287082 100%);
+  }
+  #pagination .null{
+    background:  #0089AE !important;
+  }
+  #pagination .previous{
+    border-radius: 5px 0 0 5px;
+  }
+  #pagination .next{
+    border-radius: 0 5px 5px 0;
+  }
+  #pagination .previous:hover,#pagination .next:hover{
+    background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #0088AE),
+  color-stop(1, #3A889C)
+);
+background-image: -o-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -moz-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -webkit-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -ms-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: linear-gradient(to bottom, #0088AE 0%, #3A889C 100%);
+}
+ #pagination .previous:active,#pagination .next:active{
+background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #234A54),
+  color-stop(1, #0088AE)
+);
+background-image: -o-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -moz-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -webkit-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -ms-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
+}
   #content{
     margin-left:auto;
     margin-right: auto;
-    min-height: 600px;
+    min-height: 540px;
   }
   #container{
     width: 1000px;
-  }
-  .pagination{
-    color: #000;
   }
   #main{
     padding-bottom: 0;
   }
   #footer{
     margin-top: 50px;
+  }
+  @media screen and (max-width: 480px){
+    #container{
+      width: auto;
+    }
+    #main{
+      padding-top: 10px !important;
+    }
+    .sticky{
+      font-size: 12px;
+      max-height: 130px;
+      width: 130px;
+    }
+    .sticky p{
+      font-size: 10px;
+      padding: 0;
+    }
+    .sticky .content{
+      padding: 0px 5px 10px;
+    } 
+    .sticky .date{
+      font-size: 8px;
+      margin-left: 0;
+    }
+    .sticky h1{
+      font-size: 12px;
+      padding:10px 5px 0;
+      margin: 0;
+  }
   }
 </style>
 <a href="/blog/2015/06/11/Stickynotes-refreshed.html">
@@ -250,25 +335,110 @@
     padding:15px 10px 0;
     margin: 0;
   }
-  .pagination{
-    float: left;
+  #pagination{
+    margin-top: 70px;
   }
+  #pagination,#pagination a{
+    text-transform: capitalize;
+    color: #FFF;
+    font-family: 'Lato';
+  }
+  #pagination .previous,#pagination .next,#pagination .page_number{
+    padding: 5px 10px;
+    margin: 0;
+    background: #0089AE;
+    background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #0088AE),
+  color-stop(1, #287082)
+);
+background-image: -o-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -moz-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -webkit-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -ms-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: linear-gradient(to bottom, #0088AE 0%, #287082 100%);
+  }
+  #pagination .null{
+    background:  #0089AE !important;
+  }
+  #pagination .previous{
+    border-radius: 5px 0 0 5px;
+  }
+  #pagination .next{
+    border-radius: 0 5px 5px 0;
+  }
+  #pagination .previous:hover,#pagination .next:hover{
+    background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #0088AE),
+  color-stop(1, #3A889C)
+);
+background-image: -o-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -moz-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -webkit-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -ms-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: linear-gradient(to bottom, #0088AE 0%, #3A889C 100%);
+}
+ #pagination .previous:active,#pagination .next:active{
+background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #234A54),
+  color-stop(1, #0088AE)
+);
+background-image: -o-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -moz-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -webkit-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -ms-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
+}
   #content{
     margin-left:auto;
     margin-right: auto;
-    min-height: 600px;
+    min-height: 540px;
   }
   #container{
     width: 1000px;
-  }
-  .pagination{
-    color: #000;
   }
   #main{
     padding-bottom: 0;
   }
   #footer{
     margin-top: 50px;
+  }
+  @media screen and (max-width: 480px){
+    #container{
+      width: auto;
+    }
+    #main{
+      padding-top: 10px !important;
+    }
+    .sticky{
+      font-size: 12px;
+      max-height: 130px;
+      width: 130px;
+    }
+    .sticky p{
+      font-size: 10px;
+      padding: 0;
+    }
+    .sticky .content{
+      padding: 0px 5px 10px;
+    } 
+    .sticky .date{
+      font-size: 8px;
+      margin-left: 0;
+    }
+    .sticky h1{
+      font-size: 12px;
+      padding:10px 5px 0;
+      margin: 0;
+  }
   }
 </style>
 <a href="/blog/2015/06/03/Premam-A-review-by-a-novice.html">
@@ -325,25 +495,110 @@
     padding:15px 10px 0;
     margin: 0;
   }
-  .pagination{
-    float: left;
+  #pagination{
+    margin-top: 70px;
   }
+  #pagination,#pagination a{
+    text-transform: capitalize;
+    color: #FFF;
+    font-family: 'Lato';
+  }
+  #pagination .previous,#pagination .next,#pagination .page_number{
+    padding: 5px 10px;
+    margin: 0;
+    background: #0089AE;
+    background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #0088AE),
+  color-stop(1, #287082)
+);
+background-image: -o-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -moz-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -webkit-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -ms-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: linear-gradient(to bottom, #0088AE 0%, #287082 100%);
+  }
+  #pagination .null{
+    background:  #0089AE !important;
+  }
+  #pagination .previous{
+    border-radius: 5px 0 0 5px;
+  }
+  #pagination .next{
+    border-radius: 0 5px 5px 0;
+  }
+  #pagination .previous:hover,#pagination .next:hover{
+    background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #0088AE),
+  color-stop(1, #3A889C)
+);
+background-image: -o-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -moz-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -webkit-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -ms-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: linear-gradient(to bottom, #0088AE 0%, #3A889C 100%);
+}
+ #pagination .previous:active,#pagination .next:active{
+background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #234A54),
+  color-stop(1, #0088AE)
+);
+background-image: -o-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -moz-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -webkit-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -ms-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
+}
   #content{
     margin-left:auto;
     margin-right: auto;
-    min-height: 600px;
+    min-height: 540px;
   }
   #container{
     width: 1000px;
-  }
-  .pagination{
-    color: #000;
   }
   #main{
     padding-bottom: 0;
   }
   #footer{
     margin-top: 50px;
+  }
+  @media screen and (max-width: 480px){
+    #container{
+      width: auto;
+    }
+    #main{
+      padding-top: 10px !important;
+    }
+    .sticky{
+      font-size: 12px;
+      max-height: 130px;
+      width: 130px;
+    }
+    .sticky p{
+      font-size: 10px;
+      padding: 0;
+    }
+    .sticky .content{
+      padding: 0px 5px 10px;
+    } 
+    .sticky .date{
+      font-size: 8px;
+      margin-left: 0;
+    }
+    .sticky h1{
+      font-size: 12px;
+      padding:10px 5px 0;
+      margin: 0;
+  }
   }
 </style>
 <a href="/blog/2015/06/02/Last-Day-At-ASAP.html">
@@ -359,16 +614,17 @@
 
 </div>
 <!-- Pagination links -->
-<div class="pagination">
+<center>
+<div id="pagination">
   
-    <span class="previous">Previous</span>
+    <span class="previous null">Previous</span>
   
   <span class="page_number ">Page: 1 of 1</span>
   
-    <span class="next ">Next</span>
+    <span class="next null">Next</span>
   
 </div>
-
+</center>
         </div>
         </div>
         </div>
