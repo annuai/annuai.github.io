@@ -22,6 +22,10 @@ body,html{
     font-family: 'Lato'; /*a name to be used later*/
     src: url('/public/fonts/Lato.ttf'); /*URL to font*/
 }
+@font-face {
+    font-family: 'Montserrat Light'; /*a name to be used later*/
+    src: url('/public/fonts/Montserrat-Light.otf'); /*URL to font*/
+}
 
 	/* Paste this css to your style sheet file or under head tag */
 /* This only works with JavaScript, 
