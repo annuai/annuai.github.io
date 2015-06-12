@@ -145,12 +145,13 @@
   <div id="container">
     <div id="main" style="padding-top:30px;">
       <div id="content">
-      <div class="head" style="font-size:52px;">
+      <div class="head">
       Premam - A review by a novice
       </div>
       <div class="date">03 Jun 2015<br/>2 minutes to read</div>
       <div class="paragraph">
-  <p>The new movie in town had been hitting hundreds all week long.Premam by Alphonse Putharen is not really a one-of-a-kind movie at all.But, it still packs a whole lot of punch in the package.It has something for everyone - and that is what makes the movie a real good one.</p>
+  <p><img src="http://i.imgur.com/FvgP55i.jpg" width="700" />
+The new movie in town had been hitting hundreds all week long.Premam by Alphonse Putharen is not really a one-of-a-kind movie at all.But, it still packs a whole lot of punch in the package.It has something for everyone - and that is what makes the movie a real good one.</p>
 
 <p>A typical Coming-Of-Age film with some twists and turns in the middle, that is the one-line explanation of this movie.
 The plot is set around three love stories of George, played by Nivin Pauly mostly during his teenage.George falls in love with three women of different proportions - Mary, Malar and Celin and the film has a happy ending that commences in a marriage.</p>
@@ -169,30 +170,32 @@ The plot is set around three love stories of George, played by Nivin Pauly mostl
       </div>
     </div>
   </div>
-
-<aside class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
     
-      <li>
-        <h3>
-          <a href="http://annu.co/blog/2015/06/11/Stickynotes-refreshed.html">
-            A Refresh to indicator-stickynotes
-            <small><time datetime="2015-06-11T00:00:00+05:30">11 Jun 2015</time></small>
-          </a>
-        </h3>
-      </li>
+      <a href="http://annu.co/blog/2015/06/11/Stickynotes-refreshed.html" title="A Refresh to indicator-stickynotes">
+      <div class="arrow">
+      <img width="12">
+      </div>
+      </a>
     
-      <li>
-        <h3>
-          <a href="http://annu.co/blog/2015/06/02/Last-Day-At-ASAP.html">
-            Last Day at ASAP
-            <small><time datetime="2015-06-02T00:00:00+05:30">02 Jun 2015</time></small>
-          </a>
-        </h3>
-      </li>
+      <a href="http://annu.co/blog/2015/06/02/Last-Day-At-ASAP.html" title="Last Day at ASAP">
+      <div class="arrow">
+      <img width="12">
+      </div>
+      </a>
     
-  </ul>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.arrow:first').addClass('left');
+    $('.arrow:first img').attr("src",'/public/images/arrow-left.png');
+    $('.arrow:last img').attr("src",'/public/images/arrow-right.png');
+    $('.arrow:last').addClass('right');
+    $('.btn').click(function() {
+      $('.arrow.right').toggle();
+    }); 
+  });
+  </script>
+  <script type="text/javascript">
+      </script>
 </aside>
 
 

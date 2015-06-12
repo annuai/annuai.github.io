@@ -143,7 +143,7 @@
   <div id="container">
     <div id="main" style="padding-top:30px;">
       <div id="content">
-      <div class="head" style="font-size:52px;">
+      <div class="head">
       Last Day at ASAP
       </div>
       <div class="date">02 Jun 2015<br/>1 minute to read</div>
@@ -164,30 +164,32 @@ From left Kiran - the talkative, Adarsh - the cool one, Me, Subin - the adventur
       </div>
     </div>
   </div>
-
-<aside class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
     
-      <li>
-        <h3>
-          <a href="http://annu.co/blog/2015/06/11/Stickynotes-refreshed.html">
-            A Refresh to indicator-stickynotes
-            <small><time datetime="2015-06-11T00:00:00+05:30">11 Jun 2015</time></small>
-          </a>
-        </h3>
-      </li>
+      <a href="http://annu.co/blog/2015/06/11/Stickynotes-refreshed.html" title="A Refresh to indicator-stickynotes">
+      <div class="arrow">
+      <img width="12">
+      </div>
+      </a>
     
-      <li>
-        <h3>
-          <a href="http://annu.co/blog/2015/06/03/Premam-A-review-by-a-novice.html">
-            Premam - A review by a novice
-            <small><time datetime="2015-06-03T00:00:00+05:30">03 Jun 2015</time></small>
-          </a>
-        </h3>
-      </li>
+      <a href="http://annu.co/blog/2015/06/03/Premam-A-review-by-a-novice.html" title="Premam - A review by a novice">
+      <div class="arrow">
+      <img width="12">
+      </div>
+      </a>
     
-  </ul>
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.arrow:first').addClass('left');
+    $('.arrow:first img').attr("src",'/public/images/arrow-left.png');
+    $('.arrow:last img').attr("src",'/public/images/arrow-right.png');
+    $('.arrow:last').addClass('right');
+    $('.btn').click(function() {
+      $('.arrow.right').toggle();
+    }); 
+  });
+  </script>
+  <script type="text/javascript">
+      </script>
 </aside>
 
 
