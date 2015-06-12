@@ -88,44 +88,6 @@
         });
       </script>
 
-            <script type="text/javascript">
-      // Sidebar on right side
-      $(document).ready(function () {
-    // All sides
-    var sides = ["left", "top", "right", "bottom"];
-    $("h1 span.version").text($.fn.sidebar.version);
-
-    // Initialize sidebars
-    for (var i = 0; i < sides.length; ++i) {
-        var cSide = sides[i];
-        $(".sidebar." + cSide).sidebar({side: cSide});
-    }
-
-    // Click handlers
-    $(".btn[data-action]").on("click", function () {
-        var $this = $(this);
-        var action = $this.attr("data-action");
-        var side = $this.attr("data-side");
-        $(".sidebar." + side).trigger("sidebar:" + action);
-        return false;
-    });
-});
-      </script>
-
-      <div class="sidebar right">
-<h1>LATEST</h1>
-
-      <li><a href="/blog/2015/06/11/Stickynotes-refreshed.html">A Refresh to indicator-stickynotes</a><span class="date">11 June 2015</span></li>
-      
-<h1>RECENT POSTS</h1>
-
-      <li><a href="/blog/2015/06/03/Premam-A-review-by-a-novice.html">Premam - A review by a novice</a><span class="date">3 June 2015</span></li>
-      
-      <li><a href="/blog/2015/06/02/Last-Day-At-ASAP.html">Last Day at ASAP</a><span class="date">2 June 2015</span></li>
-      
-      <a href="#" class="btn btn-danger close-btn" data-action="close" data-side="right"><span>x</span></a>
-      </div>
-
  
  <body>
  <style type="text/css">
@@ -218,7 +180,45 @@ sudo chmod +x setup.sh
         </div>
         </div>
         </div>
-  <footer id="footer">
+    <script type="text/javascript">
+      // Sidebar on right side
+      $(document).ready(function () {
+    // All sides
+    var sides = ["left", "top", "right", "bottom"];
+    $("h1 span.version").text($.fn.sidebar.version);
+
+    // Initialize sidebars
+    for (var i = 0; i < sides.length; ++i) {
+        var cSide = sides[i];
+        $(".sidebar." + cSide).sidebar({side: cSide});
+    }
+
+    // Click handlers
+    $(".btn[data-action]").on("click", function () {
+        var $this = $(this);
+        var action = $this.attr("data-action");
+        var side = $this.attr("data-side");
+        $(".sidebar." + side).trigger("sidebar:" + action);
+        return false;
+    });
+});
+      </script>
+
+      <div class="sidebar right">
+<h1>LATEST</h1>
+
+      <li><a href="/blog/2015/06/11/Stickynotes-refreshed.html">A Refresh to indicator-stickynotes</a><span class="date">11 June 2015</span></li>
+      
+<h1>RECENT POSTS</h1>
+
+      <li><a href="/blog/2015/06/03/Premam-A-review-by-a-novice.html">Premam - A review by a novice</a><span class="date">3 June 2015</span></li>
+      
+      <li><a href="/blog/2015/06/02/Last-Day-At-ASAP.html">Last Day at ASAP</a><span class="date">2 June 2015</span></li>
+      
+      <a href="#" class="btn btn-danger close-btn" data-action="close" data-side="right"><span>x</span></a>
+      </div>
+      </div>
+      <footer id="footer">
 	<div class="footer-menu">
 	<div id="container">
 	<ul class="footer-menu-container">
@@ -230,7 +230,10 @@ sudo chmod +x setup.sh
 	Made with <img src="/public/images/heart.png" height="18" /> in India
 		<span style="font-family:'Verdana'; font-weight:600;">&copy;</span> ANNUAI &bull; 2015
 		</div>
-		<script>
+	</div>
+	</div>
+	</footer>
+			<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -240,8 +243,5 @@ sudo chmod +x setup.sh
   ga('send', 'pageview');
 
 </script>
-	</div>
-	</div>
-	</footer>
   </body>
 </html>
