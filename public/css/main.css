@@ -11,10 +11,6 @@ body,html{
     overflow-x:hidden;
   }
 @font-face {
-    font-family: 'fontin'; /*a name to be used later*/
-    src: url('/public/fonts/Fontin-Regular.ttf'); /*URL to font*/
-}
-@font-face {
     font-family: 'Facebook Letter Faces'; /*a name to be used later*/
     src: url('/public/fonts/facebook-letter-faces.ttf'); /*URL to font*/
 }
@@ -226,6 +222,8 @@ if it's not present, don't show loader */
 .sidebar li span{
   display: block;
   font-size: 18px;
+  font-family: 'Lato';
+  padding-top: 5px;
   padding-bottom: 20px;
 }
 .sidebar a{
@@ -235,9 +233,22 @@ if it's not present, don't show loader */
 .sidebar li{
   list-style: none;
   text-align: left;
+  font-family: 'Montserrat Light';
 }
-.sidebar.close-btn{
-  font-family: 'verdana';
+.sidebar .close-btn span{
+  position: absolute;
+  right: 40px;
+  top:45px;
+  border:1px solid #FFF;
+  border-radius: 50%;
+  padding: 5px 14px;
+  font-size: 24px;
+  text-transform: lowercase;
+  font-family: 'sans-serif';
+}
+.sidebar .close-btn span:hover{
+  color: #2B4553;
+  background: #FFF;
 }
 .arrow.left{
   left: 0;
