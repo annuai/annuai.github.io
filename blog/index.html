@@ -79,16 +79,16 @@
         $('.btn').click(function(){
           $('#slide-numbers').hide();
         });
+        var windowWidth=$(window).width();
+        if(windowWidth<480){
+          var menu=$('#social');
+          $('.sidebar').prepend(menu);
+        }
         });
       </script>
 
  
  <body>
- <style type="text/css">
- #content .paragraph{
-  color:#2B4654; 
-  }
-  </style>
   <div id="container">
     <div id="main" style="padding-top:100px;">
       <div id="content">
@@ -108,7 +108,7 @@
     text-decoration: none;
   }
   .sticky{
-    max-height: 250px;
+    height: 250px;
     overflow: hidden;
   }
   .sticky .content{
@@ -138,7 +138,7 @@
     margin: 0;
   }
   #pagination{
-    margin-top: 70px;
+    margin-top: 20px;
   }
   #pagination,#pagination a{
     text-transform: capitalize;
@@ -217,13 +217,9 @@ background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
     #container{
       width: auto;
     }
-    #main{
-      padding-top: 10px !important;
-    }
     .sticky{
       font-size: 12px;
-      max-height: 130px;
-      width: 130px;
+      width: 120px;
     }
     .sticky p{
       font-size: 10px;
@@ -240,9 +236,203 @@ background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
       font-size: 12px;
       padding:10px 5px 0;
       margin: 0;
-  }
+    }
+    #content{
+       min-height: 0 !important;
+    }
+    #pagination{
+      margin-top: 20px;
+    }
   }
 </style>
+<script type="text/javascript">
+$(document).ready(function () {
+  var windowWidth=$(window).width();
+  if(windowWidth<480){
+    var stickyWidth=$(window).width();
+    $('.sticky').width(stickyWidth/2-45);
+    var stickyHeight=$(window).height()/3;
+    $('.sticky').height(stickyHeight);
+    var contentHeight=$('#main').height()-15;
+    $('#pagination').css("margin-top",contentHeight);
+  }
+});
+        </script>
+<a href="/blog/2015/06/13/A-New-Beginning.html">
+  <div class="sticky"><h1>A New Beginning</h1>
+  <p class="author">
+    <span class="date">13 Jun 2015</span>
+  </p>
+  <div class="content">
+    <p><a href="https://www.google.com/maps/place/D+J+Academy+of+Design/@10.872285,77.002372,17z/data=!3m1!4b1!4m2!3m1!1s0x3ba8455085677233:0x64f2ff290d7a1ca5?hl=en"><img src="http://i.imgur.com/XlGLbFn.png" /></a><br /> To Study Design had always been a dream to me, now that I have completed Secondary Education, it is the right time to start my...
+  </div>
+  </div>
+  </a>
+
+<style type="text/css">
+  .sticky{
+      float: left;
+    width: 200px;
+    background-color: #FFEBB2;
+    margin: 10px;
+    padding: 0 10px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  }
+  a{
+    color: #000;
+    text-decoration: none;
+  }
+  .sticky{
+    height: 250px;
+    overflow: hidden;
+  }
+  .sticky .content{
+    font-size: 14px;
+    padding: 5px 5px 10px;
+    margin: 0;
+  }
+  .sticky .date{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-size: 12px;
+  }
+  .sticky p{
+    margin: 0;
+    font-size:13px;
+    color: #000;
+    font-family: 'Montserrat Light';
+    letter-spacing: 0.01rem;
+    line-height: 1.5;
+    padding:0px 0px 0 5px;
+  }
+  .sticky h1{
+    font-family: 'Montserrat Light';
+    font-size: 17px;
+    padding:15px 10px 0;
+    margin: 0;
+  }
+  #pagination{
+    margin-top: 20px;
+  }
+  #pagination,#pagination a{
+    text-transform: capitalize;
+    color: #FFF;
+    font-family: 'Lato';
+  }
+  #pagination .previous,#pagination .next,#pagination .page_number{
+    padding: 5px 10px;
+    margin: 0;
+    background: #0089AE;
+    background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #0088AE),
+  color-stop(1, #287082)
+);
+background-image: -o-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -moz-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -webkit-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: -ms-linear-gradient(bottom, #0088AE 0%, #287082 100%);
+background-image: linear-gradient(to bottom, #0088AE 0%, #287082 100%);
+  }
+  #pagination .null{
+    background:  #0089AE !important;
+  }
+  #pagination .previous{
+    border-radius: 5px 0 0 5px;
+  }
+  #pagination .next{
+    border-radius: 0 5px 5px 0;
+  }
+  #pagination .previous:hover,#pagination .next:hover{
+    background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #0088AE),
+  color-stop(1, #3A889C)
+);
+background-image: -o-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -moz-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -webkit-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: -ms-linear-gradient(bottom, #0088AE 0%, #3A889C 100%);
+background-image: linear-gradient(to bottom, #0088AE 0%, #3A889C 100%);
+}
+ #pagination .previous:active,#pagination .next:active{
+background-image: -webkit-gradient(
+  linear,
+  left top,
+  left bottom,
+  color-stop(0, #234A54),
+  color-stop(1, #0088AE)
+);
+background-image: -o-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -moz-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -webkit-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: -ms-linear-gradient(bottom, #234A54 0%, #0088AE 100%);
+background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
+}
+  #content{
+    margin-left:auto;
+    margin-right: auto;
+    min-height: 540px;
+  }
+  #container{
+    width: 1000px;
+  }
+  #main{
+    padding-bottom: 0;
+  }
+  #footer{
+    margin-top: 50px;
+  }
+  @media screen and (max-width: 480px){
+    #container{
+      width: auto;
+    }
+    .sticky{
+      font-size: 12px;
+      width: 120px;
+    }
+    .sticky p{
+      font-size: 10px;
+      padding: 0;
+    }
+    .sticky .content{
+      padding: 0px 5px 10px;
+    } 
+    .sticky .date{
+      font-size: 8px;
+      margin-left: 0;
+    }
+    .sticky h1{
+      font-size: 12px;
+      padding:10px 5px 0;
+      margin: 0;
+    }
+    #content{
+       min-height: 0 !important;
+    }
+    #pagination{
+      margin-top: 20px;
+    }
+  }
+</style>
+<script type="text/javascript">
+$(document).ready(function () {
+  var windowWidth=$(window).width();
+  if(windowWidth<480){
+    var stickyWidth=$(window).width();
+    $('.sticky').width(stickyWidth/2-45);
+    var stickyHeight=$(window).height()/3;
+    $('.sticky').height(stickyHeight);
+    var contentHeight=$('#main').height()-15;
+    $('#pagination').css("margin-top",contentHeight);
+  }
+});
+        </script>
 <a href="/blog/2015/06/11/Stickynotes-refreshed.html">
   <div class="sticky"><h1>A Refresh to indicator-stickynotes</h1>
   <p class="author">
@@ -268,7 +458,7 @@ background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
     text-decoration: none;
   }
   .sticky{
-    max-height: 250px;
+    height: 250px;
     overflow: hidden;
   }
   .sticky .content{
@@ -298,7 +488,7 @@ background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
     margin: 0;
   }
   #pagination{
-    margin-top: 70px;
+    margin-top: 20px;
   }
   #pagination,#pagination a{
     text-transform: capitalize;
@@ -377,13 +567,9 @@ background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
     #container{
       width: auto;
     }
-    #main{
-      padding-top: 10px !important;
-    }
     .sticky{
       font-size: 12px;
-      max-height: 130px;
-      width: 130px;
+      width: 120px;
     }
     .sticky p{
       font-size: 10px;
@@ -400,9 +586,28 @@ background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
       font-size: 12px;
       padding:10px 5px 0;
       margin: 0;
-  }
+    }
+    #content{
+       min-height: 0 !important;
+    }
+    #pagination{
+      margin-top: 20px;
+    }
   }
 </style>
+<script type="text/javascript">
+$(document).ready(function () {
+  var windowWidth=$(window).width();
+  if(windowWidth<480){
+    var stickyWidth=$(window).width();
+    $('.sticky').width(stickyWidth/2-45);
+    var stickyHeight=$(window).height()/3;
+    $('.sticky').height(stickyHeight);
+    var contentHeight=$('#main').height()-15;
+    $('#pagination').css("margin-top",contentHeight);
+  }
+});
+        </script>
 <a href="/blog/2015/06/03/Premam-A-review-by-a-novice.html">
   <div class="sticky"><h1>Premam - A review by a novice</h1>
   <p class="author">
@@ -428,7 +633,7 @@ background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
     text-decoration: none;
   }
   .sticky{
-    max-height: 250px;
+    height: 250px;
     overflow: hidden;
   }
   .sticky .content{
@@ -458,7 +663,7 @@ background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
     margin: 0;
   }
   #pagination{
-    margin-top: 70px;
+    margin-top: 20px;
   }
   #pagination,#pagination a{
     text-transform: capitalize;
@@ -537,13 +742,9 @@ background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
     #container{
       width: auto;
     }
-    #main{
-      padding-top: 10px !important;
-    }
     .sticky{
       font-size: 12px;
-      max-height: 130px;
-      width: 130px;
+      width: 120px;
     }
     .sticky p{
       font-size: 10px;
@@ -560,9 +761,28 @@ background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
       font-size: 12px;
       padding:10px 5px 0;
       margin: 0;
-  }
+    }
+    #content{
+       min-height: 0 !important;
+    }
+    #pagination{
+      margin-top: 20px;
+    }
   }
 </style>
+<script type="text/javascript">
+$(document).ready(function () {
+  var windowWidth=$(window).width();
+  if(windowWidth<480){
+    var stickyWidth=$(window).width();
+    $('.sticky').width(stickyWidth/2-45);
+    var stickyHeight=$(window).height()/3;
+    $('.sticky').height(stickyHeight);
+    var contentHeight=$('#main').height()-15;
+    $('#pagination').css("margin-top",contentHeight);
+  }
+});
+        </script>
 <a href="/blog/2015/06/02/Last-Day-At-ASAP.html">
   <div class="sticky"><h1>Last Day at ASAP</h1>
   <p class="author">
@@ -617,10 +837,12 @@ background-image: linear-gradient(to bottom, #234A54 0%, #0088AE 100%);
       <div class="sidebar right">
 <h1>LATEST</h1>
 
-      <li><a href="/blog/2015/06/11/Stickynotes-refreshed.html">A Refresh to indicator-stickynotes</a><span class="date">11 June 2015</span></li>
+      <li><a href="/blog/2015/06/13/A-New-Beginning.html">A New Beginning</a><span class="date">13 June 2015</span></li>
       
 <h1>RECENT POSTS</h1>
 
+      <li><a href="/blog/2015/06/11/Stickynotes-refreshed.html">A Refresh to indicator-stickynotes</a><span class="date">11 June 2015</span></li>
+      
       <li><a href="/blog/2015/06/03/Premam-A-review-by-a-novice.html">Premam - A review by a novice</a><span class="date">3 June 2015</span></li>
       
       <li><a href="/blog/2015/06/02/Last-Day-At-ASAP.html">Last Day at ASAP</a><span class="date">2 June 2015</span></li>

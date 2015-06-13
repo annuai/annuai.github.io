@@ -66,8 +66,7 @@ if it's not present, don't show loader */
 	#content{
 		font-size: 16px;
 		color: #000;
-    margin-right: 15%;
-    margin-left: 5%;
+    margin:0 10% 0 10%;
 	}
 #content img{
     max-width: 100%; 
@@ -80,6 +79,7 @@ if it's not present, don't show loader */
 		color: #FF4A4E;
     line-height: 55px;
     margin-bottom: 20px;
+    padding-right: 40px;
 	}
 	#content .paragraph{
 		font-size:21px;
@@ -89,13 +89,14 @@ if it's not present, don't show loader */
     letter-spacing: 0.01rem;
     line-height: 1.5;
     padding:0px 0px 0 5px;
+    color:#2B4654; 
   }
   #content  .date{
     font-family: 'Lato';
     margin-left: 5px;
     text-transform: capitalize;
   }
-	#content .paragraph:firsletter
+	#content .paragraph:firstletter
 	{
 		float: left;
 		padding:0 10px 10px;
@@ -226,6 +227,9 @@ if it's not present, don't show loader */
   font-family: 'Lato';
   padding-top: 5px;
   padding-bottom: 20px;
+}
+.sidebar #social{
+  float: none;
 }
 .sidebar a{
   color: #FFF;
@@ -410,8 +414,8 @@ pre{
     width: auto;
   }
   #main{
-    padding: 50px 0 0;
-  }
+      padding-top: 20px !important;
+    }
     .slide{
     height: 700px !important;
     max-height: 700px !important;
@@ -422,6 +426,11 @@ pre{
   }
   #content .paragraph{
     padding:0 60px 0 0px !important;
+  }
+  #content .head{
+    font-size: 36px;
+    line-height: 1.2;
+    width: 100%;
   }
   .paginate{
     display: none;
@@ -472,7 +481,7 @@ pre{
     font-size: 11px;
   }
       .socialcontacts{
-    background-size: 70% auto;
+    background-size: 80% auto;
   }
   #desk img{
     margin-top: -20px;

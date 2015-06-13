@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "A New Beginning",
+      "category" : "",
+      "tags"     : "",
+      "url"      : "/blog/2015/06/13/A-New-Beginning.html",
+      "date"     : "2015-06-13 00:00:00 +0530"
+    } ,
+  
+    {
       "title"    : "A Refresh to indicator-stickynotes",
       "category" : "",
       "tags"     : "",

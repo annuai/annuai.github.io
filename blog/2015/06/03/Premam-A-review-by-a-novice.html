@@ -85,29 +85,20 @@
         $('.btn').click(function(){
           $('#slide-numbers').hide();
         });
+        var windowWidth=$(window).width();
+        if(windowWidth<480){
+          var menu=$('#social');
+          $('.sidebar').prepend(menu);
+        }
         });
       </script>
 
  
  <body>
- <style type="text/css">
- #content .paragraph{
-  color:#2B4654; 
-  }
-  </style>
   <div id="container">
     <div id="main" style="padding-top:100px;">
       <div id="content">
-         <body>
- <style type="text/css">
- #content .paragraph{
-  color:#2B4654; 
-  }
-  </style>
-  <div id="container">
-    <div id="main" style="padding-top:30px;">
-      <div id="content">
-      <div class="head">
+        <div class="head">
       Premam - A review by a novice
       </div>
       <div class="date">03 Jun 2015<br/>2 minutes to read</div>
@@ -133,13 +124,13 @@ The plot is set around three love stories of George, played by Nivin Pauly mostl
     </div>
   </div>
     
-      <a href="http://annu.co/blog/2015/06/11/Stickynotes-refreshed.html" title="A Refresh to indicator-stickynotes">
+      <a href="http://annu.co/blog/2015/06/13/A-New-Beginning.html" title="A New Beginning">
       <div class="arrow">
       <img width="12">
       </div>
       </a>
     
-      <a href="http://annu.co/blog/2015/06/02/Last-Day-At-ASAP.html" title="Last Day at ASAP">
+      <a href="http://annu.co/blog/2015/06/11/Stickynotes-refreshed.html" title="A Refresh to indicator-stickynotes">
       <div class="arrow">
       <img width="12">
       </div>
@@ -192,10 +183,12 @@ The plot is set around three love stories of George, played by Nivin Pauly mostl
       <div class="sidebar right">
 <h1>LATEST</h1>
 
-      <li><a href="/blog/2015/06/11/Stickynotes-refreshed.html">A Refresh to indicator-stickynotes</a><span class="date">11 June 2015</span></li>
+      <li><a href="/blog/2015/06/13/A-New-Beginning.html">A New Beginning</a><span class="date">13 June 2015</span></li>
       
 <h1>RECENT POSTS</h1>
 
+      <li><a href="/blog/2015/06/11/Stickynotes-refreshed.html">A Refresh to indicator-stickynotes</a><span class="date">11 June 2015</span></li>
+      
       <li><a href="/blog/2015/06/03/Premam-A-review-by-a-novice.html">Premam - A review by a novice</a><span class="date">3 June 2015</span></li>
       
       <li><a href="/blog/2015/06/02/Last-Day-At-ASAP.html">Last Day at ASAP</a><span class="date">2 June 2015</span></li>

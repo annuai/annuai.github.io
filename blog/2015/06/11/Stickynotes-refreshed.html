@@ -85,29 +85,20 @@
         $('.btn').click(function(){
           $('#slide-numbers').hide();
         });
+        var windowWidth=$(window).width();
+        if(windowWidth<480){
+          var menu=$('#social');
+          $('.sidebar').prepend(menu);
+        }
         });
       </script>
 
  
  <body>
- <style type="text/css">
- #content .paragraph{
-  color:#2B4654; 
-  }
-  </style>
   <div id="container">
     <div id="main" style="padding-top:100px;">
       <div id="content">
-         <body>
- <style type="text/css">
- #content .paragraph{
-  color:#2B4654; 
-  }
-  </style>
-  <div id="container">
-    <div id="main" style="padding-top:30px;">
-      <div id="content">
-      <div class="head">
+        <div class="head">
       A Refresh to indicator-stickynotes
       </div>
       <div class="date">11 Jun 2015<br/>1 minute to read</div>
@@ -148,13 +139,13 @@ sudo chmod +x setup.sh
     </div>
   </div>
     
-      <a href="http://annu.co/blog/2015/06/03/Premam-A-review-by-a-novice.html" title="Premam - A review by a novice">
+      <a href="http://annu.co/blog/2015/06/13/A-New-Beginning.html" title="A New Beginning">
       <div class="arrow">
       <img width="12">
       </div>
       </a>
     
-      <a href="http://annu.co/blog/2015/06/02/Last-Day-At-ASAP.html" title="Last Day at ASAP">
+      <a href="http://annu.co/blog/2015/06/03/Premam-A-review-by-a-novice.html" title="Premam - A review by a novice">
       <div class="arrow">
       <img width="12">
       </div>
@@ -207,10 +198,12 @@ sudo chmod +x setup.sh
       <div class="sidebar right">
 <h1>LATEST</h1>
 
-      <li><a href="/blog/2015/06/11/Stickynotes-refreshed.html">A Refresh to indicator-stickynotes</a><span class="date">11 June 2015</span></li>
+      <li><a href="/blog/2015/06/13/A-New-Beginning.html">A New Beginning</a><span class="date">13 June 2015</span></li>
       
 <h1>RECENT POSTS</h1>
 
+      <li><a href="/blog/2015/06/11/Stickynotes-refreshed.html">A Refresh to indicator-stickynotes</a><span class="date">11 June 2015</span></li>
+      
       <li><a href="/blog/2015/06/03/Premam-A-review-by-a-novice.html">Premam - A review by a novice</a><span class="date">3 June 2015</span></li>
       
       <li><a href="/blog/2015/06/02/Last-Day-At-ASAP.html">Last Day at ASAP</a><span class="date">2 June 2015</span></li>

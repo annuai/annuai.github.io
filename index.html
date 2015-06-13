@@ -29,8 +29,41 @@
   <script type="text/JavaScript" src="/public/js/script.js"></script>
 </head>
 	<style type="text/css">
+	#content{
+		margin: 0;
+	}
 	#content .paragraph{
-		margin-left: 30px;
+		margin-left: 50px;
+		color: #FFF;
+		width: 80%;
+	}
+	#content .head{
+		padding-right: 0;
+		padding-left: 20px;
+	}
+	#main{
+
+		padding-top: 15vh !important;
+	}
+	@media screen and (max-width: 480px){
+		#main{
+			padding-top: 10vh !important;
+		}
+		#content .paragraph{
+			font-size: 14px;
+			margin-left: 40px;
+			padding-right:30px !important;
+		}
+		#content .head img{
+			width: 80vw;
+			padding-left: 10px;
+		}
+		#contact a{
+			margin: 10px 0;
+		}
+		img.travelheader{
+			width: 60vw !important;
+		}
 	}
 	</style>
 <body class="pageWrapper">
@@ -103,9 +136,6 @@
 				My varied fields of Design include the Open world of the Web, designing real-life Products and experiences.<br />
 				I have thought myself Human Computer Interaction and I design applications that are more easier to use, in terms of usability.
 			</div>
-			<div id="desk">
-			<img src="/public/images/path11514.png" style="height:50vh;">
-			</div>
 			</div>
 			</div>
 		</div>
@@ -131,7 +161,7 @@
 			<div class="head" style="font-family:'Andale Mono';color:#FFF; display:inline-block;">
 			<img src="/public/images/developer.png">
 			</div>
-			<div class="paragraph" style=" margin-top:30px; padding:0px 50px 0;color:#FFF;">
+			<div class="paragraph">
 			During years I have lived here, I was fascinated by the wonderful machines called Computers.I had a crush on them and soon started learning more about them.I came to know that these machines worked on Code - fragments of their own language that made them do wonderful things.<br/>
 			That was the start.I started programming at an early age and now calls myself an expert in application programming in C++, Qt, JavaScript, JQuery, HTML etc.
 			<div id="ubuwindow">
@@ -263,10 +293,12 @@ function updateImageSize() {
 	    <div class="sidebar right">
 <h1>LATEST</h1>
 
-      <li><a href="/blog/2015/06/11/Stickynotes-refreshed.html">A Refresh to indicator-stickynotes</a><span class="date">11 June 2015</span></li>
+      <li><a href="/blog/2015/06/13/A-New-Beginning.html">A New Beginning</a><span class="date">13 June 2015</span></li>
       
 <h1>RECENT POSTS</h1>
 
+      <li><a href="/blog/2015/06/11/Stickynotes-refreshed.html">A Refresh to indicator-stickynotes</a><span class="date">11 June 2015</span></li>
+      
       <li><a href="/blog/2015/06/03/Premam-A-review-by-a-novice.html">Premam - A review by a novice</a><span class="date">3 June 2015</span></li>
       
       <li><a href="/blog/2015/06/02/Last-Day-At-ASAP.html">Last Day at ASAP</a><span class="date">2 June 2015</span></li>
