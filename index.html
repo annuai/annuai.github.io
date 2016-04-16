@@ -11,6 +11,15 @@
 	html, body {
 		height: 100%;
     }
+    a{
+    	text-decoration: none;
+    }
+    ::selection {
+    background: #fdfffc; /* WebKit/Blink Browsers */
+    }
+    ::-moz-selection {
+    	background: #fdfffc;
+    }
     body{
 		padding: 0;
 		margin:0;
@@ -83,6 +92,13 @@
 	#page2 .bubble .head{
 		font-size: 15pt;
 		padding: 40px 26px;
+	}
+	#page2 	#bubbles{
+		width: 400px;
+		margin-top: -15vh;
+		margin-right:5vw; 
+		position: unset;
+		float: right;
 	}
 	#page3{
 		padding:0;
@@ -171,14 +187,17 @@
 	.mail-bubble img{
 		padding: 5px 0 0 4px;
 	}
+	#bubbles{
+		width: 400px;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+	}
 	.bubble{
 		border-radius: 50%;
 		background: #fdffff;
 		font-family: 'Track';
 		font-size: 20pt;
-		position: absolute;
-		bottom: 0;
-		left: 50%;
 		color: #011627;
 	}
 	.bubble .content{
@@ -192,8 +211,8 @@
 		padding-top: 65px;
 		width: 120px;
 		height: 95px;
-		margin-left: -16%;
-		bottom: 19%;
+		margin-left: -50%;
+		margin-bottom: -50%;
 		text-align: center;
 	}
 	#bubble1 .content{
@@ -205,8 +224,8 @@
 		padding-top: 40px;
 		width: 110px;
 		height: 100px;
-		margin-left:-1.5%;
-		bottom: 15%;
+		margin-left:5%;
+		margin-bottom: 2%;
 		text-align: right;
 		font-size: 14pt;
 	}
@@ -219,7 +238,7 @@
 		width: 80px;
 		height: 70px;
 		margin-left:-8%;
-		bottom: 3%;
+		margin-bottom: 5%;
 		text-align: center;
 		font-size: 14pt;
 	}
@@ -258,6 +277,27 @@
 	#page2 .pcontent-mobile{
 		display: none;
 	}
+
+/* ==========================================================================
+   11. Media Queries - Smaller than 900px
+   ========================================================================== */
+
+@media only screen and (max-width: 900px) {
+	#page1{
+		height: auto;
+	}
+
+}
+
+
+/* ==========================================================================
+   12. Media Queries - Smaller than 500px
+   ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+
+}
+
 	</style>
 </head>
 <body>
@@ -278,6 +318,7 @@
 <div id="header">THE CURIOUS CLOT<span style="color:#fdffff;">.</span></div>
 <div id="content"><b>Hi</b> I'm <b>Annuai</b>.I make beautiful things and design memorable experiences.</div>
 </div>
+<div id="bubbles">
 <a href="mailto:annuai.annu@gmail.com">
 <div id="bubble1" class="bubble">
 <div class="arrow"><img src="Images/arrow.png" height="26"></div>
@@ -311,7 +352,7 @@ about things that amaze me</div>
 <div class="arrow"><img src="Images/arrow-down.png" height="20"></div>
 </div>
 </a>
-
+</div>
 </div>
 <div id="page2">
 <div id="spanbar" style="background:#f71735; height: 5px;"></div>
@@ -340,18 +381,20 @@ about things that amaze me</div>
 	</div>
 	</div>
 	</td>
-	<td>
-	<div id="bubble" class="bubble" style="margin-left: 3%; margin-top: 0%;">
+	<td align="right">
+	<div id="bubbles">
+	<div id="bubble" class="bubble" style="margin-left: 3%; margin-top: 5%;">
 <div class="head" style="padding: 45px 30px;">Graphic<br><span style="font-size: 17.5pt;">Design</span></div>
 </div>
-<div id="bubble" class="bubble" style="margin-left: -28%;margin-top: 8%; width: 200px; height: 200px;">
+<div id="bubble" class="bubble" style="margin-left: -83%;margin-top:27%; width: 200px; height: 200px;">
 <div class="head" style="padding: 60px 50px;"><span style="font-size: 28pt;float: left;">User</span><br><span style="font-size: 12pt; margin: -2px 0 2px;float: left;">Experience</span><br><span style="font-size: 20pt; margin-top: 0px;">Design</span></div>
 </div>
-<div id="bubble" class="bubble" style="margin-left: -20%;margin-top: 26%; ">
+<div id="bubble" class="bubble" style="margin-left:-27%;margin-top: 45%; width: 180px; height: 180px;">
+<div class="head" style="padding: 50px 38px;"><span style="font-size: 30pt;float: left;">Full</span><br><span style="font-size: 22pt;margin-top:-3px;float: left;">Stack</span><br><span style="font-size: 12pt;margin-top:-2px;float: left;">Developer</span></div>
+<div id="bubble" class="bubble" style="margin-left: -70%;margin-top: -3%; ">
 <div class="head" style="padding: 45px 27px;"><span style="font-size: 14pt;">Product</span><br><span style="font-size: 17.5pt;">Design</span></div>
 </div>
-<div id="bubble" class="bubble" style="margin-left: -9%;margin-top: 14%; width: 180px; height: 180px;">
-<div class="head" style="padding: 50px 38px;"><span style="font-size: 30pt;float: left;">Full</span><br><span style="font-size: 22pt;margin-top:-3px;float: left;">Stack</span><br><span style="font-size: 12pt;margin-top:-2px;float: left;">Developer</span></div>
+</div>
 </div>
 </td>
 </tr>
