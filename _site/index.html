@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Annuai - The Curious Clot - Designer, Coder and Thinker</title>
+	<link rel="shortcut icon" href="blog/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+	<meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style type="text/css">
+	* {
+		margin: 0;
+	}
+	html, body {
+		height: 100%;
+    }
+    a{
+    	text-decoration: none;
+    }
+    ::selection {
+    background: #fdfffc; /* WebKit/Blink Browsers */
+    }
+    ::-moz-selection {
+    	background: #fdfffc;
+    }
+    body{
+		padding: 0;
+		margin:0;
+		background: #fdfffc;
+		overflow-x:hidden;
+	}
+	@font-face {
+		font-family: 'Track';
+		src: url('./fonts/Track.ttf')format('truetype'),
+		url("./fonts/Track.eot") format('embedded-opentype');
+	}
+	@font-face {
+		font-family: 'URW Gothic L';
+		src: url('fonts/urw-gothic-l-book.ttf')format('truetype'),
+		url("fonts/urw-gothic-l-book.eot") format('embedded-opentype');
+	}
+	#page1{
+		height: 100vh;
+		width: 100vw;
+		margin: 0;
+		padding: 0;
+		background: #f71735;
+	}
+	#page1 #logo{
+		color:#fdffff;
+	}
+	#page2{
+		height: 100vh;
+		background: #fdfffc;
+		color: #011627;	
+	}
+	#page2 #main{
+		padding: 0% 5% 5%;
+	}
+	#page2 #content{
+		width: auto;
+		/*font-family: 'Abyssinica SIL';
+		font-family: 'Source Sans Pro';*/
+		font-style: normal;
+		font-size: 10pt;
+		line-height: 1.4;
+		letter-spacing: 0.02em;
+	}
+	#page2 #content p{
+		margin-top: 10px;
+	}
+	#page2 #main .head{
+		font-family: 'URW Gothic L';
+		font-weight: 600;
+		font-size: 20pt;
+		padding: 0 3px;
+		font-style: oblique;
+	}
+	#page2 .link{
+		color: #f71735;
+		text-decoration: none;
+	}
+	#page2 .link:hover{
+		text-decoration: underline;
+	}
+	#page2 .bubble{
+		border-radius: 50%;
+		background: #f71735;
+		font-family: 'Track';
+		font-size: 20pt;
+		color: #fdfffc;
+		position: relative;
+		width: 140px;
+		height: 140px;
+		float: left;
+	}
+	#page2 .bubble .head{
+		font-size: 15pt;
+		padding: 40px 26px;
+	}
+	#page2 	#bubbles{
+		width: 400px;
+		margin-top: -15vh;
+		margin-right:5vw; 
+		position: unset;
+		float: right;
+	}
+	#page3{
+		padding:0;
+		margin-top: 100px;
+		background: #fdfffc;
+	}
+	#page3 #head{
+		font-size: 30pt;
+		font-family: 'Ostrich Sans';
+		color: #546A76;
+		padding-left: 70px;
+		padding-bottom: 20px;
+	}
+	#page3 #spanbar{
+		height: 5px;
+		display: block;
+		width: 100%;
+	}
+	#page3 #main{
+		width: auto;
+		padding:60px 0 0;
+	}
+	#page3 #posts{
+		font-family: 'Forum';
+		font-size: 21pt;
+		color: #011627;
+	}
+	#page3 #posts .post{
+		border-left: 10px solid #f71735;
+		padding: 5px 0 5px 60px;
+		width: 540px;
+	}
+	#page3 #posts .post:active{
+		background: #f71735;
+		color: #fdfffc;
+	}
+	#page3 #posts .post:nth-child(2n){
+		border-left: 10px solid #54494b;
+	}
+	#page3 #posts .post:nth-child(2n):active{
+		background: #54494b;
+		color: #fdfffc;
+	}	
+	#page3 #posts .post .date{
+		font-size: 15pt;
+		font-family: 'Lato';
+		color: #96ABAB;
+	}
+	#main{
+		width: 340px;
+		padding-left: 10%;
+		padding-top: 10%;
+	}
+	#logo{
+		font-family: 'Track';
+		color:#f71735; 
+		display: block;
+		font-size: 22pt;
+	}
+	#header{
+		font-family: 'Track';
+		color: #011627;
+		display: block;
+		font-size: 20pt;
+		margin-top: 1px;
+	}
+	#content{
+		color: #011627;
+		display: block;
+		width: 240px;
+		font-family: 'URW Gothic L';
+		font-style: Oblique;
+		font-size: 12pt;
+		margin-top: -5px;
+		margin-left: 3px;
+	}
+	.mail-bubble{
+		background:#fdfffc ;
+		border-radius: 50%;
+		padding: 10px;
+		width: 30px;
+		height: 30px;
+		float: right;
+		margin:10px;
+	}
+	.mail-bubble img{
+		padding: 5px 0 0 4px;
+	}
+	#bubbles{
+		width: 400px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.bubble{
+		border-radius: 50%;
+		background: #fdffff;
+		font-family: 'Track';
+		font-size: 20pt;
+		color: #011627;
+	}
+	.bubble .content{
+		font-size: 7pt;
+	}
+	#bubble1 .arrow{
+		margin-top: -40px;
+	}
+	#bubble1{
+		padding: 40px;
+		padding-top: 65px;
+		width: 120px;
+		height: 95px;
+		margin-left: 0%;
+		margin-bottom: -48%;
+		text-align: center;
+	}
+	#bubble1 .content{
+		width: 80px;
+		padding-left: 20px;
+	}
+	#bubble2{
+		padding: 30px;
+		padding-top: 40px;
+		width: 110px;
+		height: 100px;
+		margin-left:55%;
+		margin-bottom: 0%;
+		text-align: right;
+		font-size: 14pt;
+	}
+	#bubble2 .arrow{
+		padding-left: 5px;
+	}
+	#bubble3{
+		padding: 20px;
+		padding-top: 30px;
+		width: 80px;
+		height: 70px;
+		margin-left:40%;
+		margin-bottom: 5%;
+		text-align: center;
+		font-size: 14pt;
+	}
+	#bubble3 .arrow{
+		padding-top: 5px;	
+	}
+	#social{
+		position: absolute;
+		right: 11px;
+		top: 15px;
+	}
+	#social li{
+		list-style: none;
+		float: left;
+		padding-right: 9px;
+	}
+	#social .phone{
+		display: inline-block;
+		float: left;
+		padding-right: 15px;
+		font-family: 'Forum';
+		font-style: oblique;
+		font-weight: 600;
+		font-size: 14pt;
+		color: #fdfffc;
+		margin: -5px -7px 0 0;
+	}
+	#footer{
+		font-family: "Open Sans", sans-serif;
+		color:#011627;
+		font-size: 12pt;
+		text-align: center;
+		padding: 80px 10px 20px 0;
+	}
+	#page2 #logo{
+		padding: 60px 5%; color: #322745;
+	}
+	.page2-table{
+		margin-left: 40px;
+	}
+	.page2-table-td{
+		width:24%;
+	}
+	/* Mobile */
+	#page2 .pcontent-mobile{
+		display: none;
+	}
+	#mobile-nav{
+		display: none;
+	}
+
+/* ==========================================================================
+   11. Media Queries - Smaller than 900px
+   ========================================================================== */
+
+@media only screen and (max-width: 1000px) {
+	#page1{
+		height: auto;
+		min-height: 600px;
+	}
+	#bubbles{
+		display: none;
+	}
+	#page1 #bubbles{
+		position: unset;
+		margin: auto;
+		display: block;
+		height: 200px;
+		width: 300px;
+	}
+	#page1 .bubble .content{
+		display: none;
+	}
+	#page1 .bubble{
+		width:40px !important;
+		height: 40px !important;
+		font-size: 13pt !important; 
+	}
+	#page1 #bubble1{
+		font-size: 14pt !important;
+	}
+	#page1 #bubble1 span{
+		font-size: 20pt !important;
+	}
+	#page1 #bubble1{
+		padding: 60px 60px 0 35px !important;
+		height: 55px !important;
+		width: 20px !important;
+		margin-left: 65px;
+	}
+	#page1 #bubble1 img{
+		height: 16px !important;
+		margin-left: 8px;
+	}
+	#page1 #bubble2{
+		height: 30px !important;
+		width: 35px !important;
+		margin-top: 85px;
+		margin-left: 195px;
+		padding: 30px 50px 45px 20px;
+	}
+	#page1 #bubble2 img{
+		width: 10px;
+	}
+	#page1 #bubble3{
+		margin-top: -10px;
+		margin-left: 130px;
+		width: 50px !important;
+	}
+	#page1 #bubble3 img{
+		height: 10px;
+	}
+	#page2{
+		height: auto;
+		min-height: 700px;
+	}
+	#logo{
+		margin-top: 70px;
+		font-size: 25pt;
+		margin-bottom: 5px;
+	}
+	#header{
+		font-size: 18pt;
+		margin-bottom: 5px;
+	}
+	#content{
+		font-size: 14pt;
+	}
+	#page2 .pcontent-mobile{
+		visibility: visible;
+		display: block;
+	}
+	.page2-table{
+		margin:0;
+	}
+	#page1 #main{
+		padding: 20% 0 50px 15%;
+		width: auto;
+	}
+	#page2 #main{
+		width: auto;
+	}
+	.page2-table-td{
+		width: 100%;
+		padding: 0 20px;
+	}
+	#page2 #logo{
+		padding: 0 5%;
+	}
+	#mobile-nav{
+		display: block;
+		margin-top: 20px;
+		font-family: 'Track';
+		font-size: 13pt;
+		height: 60px;
+	}
+	#mobile-nav ul{
+		padding: 0;
+		margin: 0;
+	}
+	#mobile-nav li{
+
+		display: inline-block;
+		list-style: none;
+		text-align: center;
+		margin: 0;
+		padding: 10px;
+		background: #fdfffc;
+		border-radius: 50%;
+		width: 80px;
+		height: 80px;
+	}
+	#footer{
+		text-align: left;
+		font-size: 9pt;
+		margin-left: 40px;
+	}
+	#footer img{
+		height: 13px;
+	}
+	#spanbar{
+		display: none;
+	}
+
+}
+
+
+/* ==========================================================================
+   12. Media Queries - Smaller than 500px
+   ========================================================================== */
+
+@media only screen and (max-width: 500px) {
+
+}
+
+	</style>
+</head>
+<body>
+<div id="page1">
+<div id="social">
+	<ul>
+	<a href="tel:+919645738621"><div class="phone"><img src="Images/Social/phone.png"></div></a>
+	<li><a href="https://www.behance.net/annuai"><img src="Images/Social/behance.png" height="18"></a></li>
+	<li><a href="https://www.github.com/annuai"><img src="Images/Social/git.png" height="18"></a></li>
+	<li><a href="https://www.dribbble.com/annu"><img src="Images/Social/dribbble.png" height="18"></a></li>
+	<li><a href="https://www.facebook.com/annuai"><img src="Images/Social/Facebook.png" height="18"></a></li>
+	<li><a href="https://www.twitter.com/annu625"><img src="Images/Social/twitter.png" height="18"></a></li>
+	</ul>
+	<a href="mailto:annuai.annu@gmail.com"><div class="mail-bubble"><img src="Images/Social/mail.png"></div></a>
+</div>
+<div id="main">
+<div id="logo">ANNU</div>
+<div id="header">THE CURIOUS CLOT<span style="color:#fdffff;">.</span></div>
+<div id="content"><b>Hi</b> I'm <b>Annuai</b>.I make beautiful things and design memorable experiences.</div>
+</div>
+<div id="bubbles">
+<a href="mailto:annuai.annu@gmail.com">
+<div id="bubble1" class="bubble">
+<div class="arrow"><img src="Images/arrow.png" height="26"></div>
+<div class="head">HIRE<br><span style="font-size: 31pt;">ME</span></div>
+<div class="content">I am available
+for code and 
+design work</div>
+</div>
+</a>
+
+<a href="./blog">
+<div id="bubble2" class="bubble">
+<table>
+<tr>
+<td>
+<div class="head">MY<br>BLOG</div>
+<div class="content">Where I Write 
+about things that amaze me</div>
+</td>
+<td>
+<div class="arrow"><img src="Images/arrow-right.png" width="20"></div>
+</td>
+</tr>
+</table>
+</div>
+</a>
+
+<a href="#spanbar">
+<div id="bubble3" class="bubble">
+<div class="head">MY<br>STORY</div>
+<div class="arrow"><img src="Images/arrow-down.png" height="20"></div>
+</div>
+</a>
+</div>
+</div>
+<div id="page2">
+<div id="spanbar" style="background:#f71735; height: 5px;"></div>
+<table width="100%" class="page2-table">
+<tr><td class="page2-table-td">
+	<div id="logo">ANNUAI</div>
+	<div id="main">
+	<div id="content">
+	<p class="pcontent-mobile">I am a Full Stack Developer who does User Experience Design, Graphic Design and Product Design work.</p>
+	<p>I am an <i>Indian-Born</i> 18 year old <b>Designer</b> and <b>Developer</b> from <i>Kerala</i>. 
+	</p>
+	<p>I Started out with programming at the age of 13, and made my way through web technologies like HTML and JavaScript to C++, Java and Qt.I always wonder about the different ways people Interact with machines around them.
+	</p>
+	<p>After Passing out of High School in 2015, I joined DJ Academy Of Design, Coimbatore to pursue a career in Design.I Dropped out of College after the foundation year on the thought that my Life should not be spent just on beautifying things.
+	</p>
+	<p>One of my Ambitions is to <b>travel</b> the world and find new experiences in Life.</p>
+	<p>I'm also an Enthusiast <b>Photographer</b></p>
+	<p>I am Hoping to work on <b>Freelance</b> projects in my freetime for now.</p>
+	<p>Nowadays my favourite subjects of Interest are <i>Product Design, Machine Learning and Psychology</i></p>
+	<p>I Read. I Sketch. I Code. I Dream, and sometimes I Write</p>
+	<p>I'm also a die-hard <b>Linux</b> Enthusiast</p>
+	<p>Unlike other Coders, I like <i>Tea</i> than <i>Coffee</i>.</p>
+	<p>If I have any of my work hosted online, you'll find it <a href="./projects" class="link">Here</a>.</p>
+	<p>If you feel like talking to me, just drop me a <a href="mailto:annuai.annu@gmail.com" class="link">good old email</a> or text me on <a href="http://facebook.com/annuai" class="link">facebook</a></p>
+	<a href="resume.pdf" class="link"><p style="font-size: 14pt;">Resume</p></a>
+	</div>
+	</div>
+	</td>
+	<td align="right">
+	<div id="bubbles">
+	<div id="bubble" class="bubble" style="margin-left: 3%; margin-top: 5%;">
+<div class="head" style="padding: 45px 30px;">Graphic<br><span style="font-size: 17.5pt;">Design</span></div>
+</div>
+<div id="bubble" class="bubble" style="margin-left: -83%;margin-top:27%; width: 200px; height: 200px;">
+<div class="head" style="padding: 60px 50px;"><span style="font-size: 28pt;float: left;">User</span><br><span style="font-size: 12pt; margin: -2px 0 2px;float: left;">Experience</span><br><span style="font-size: 20pt; margin-top: 0px;">Design</span></div>
+</div>
+<div id="bubble" class="bubble" style="margin-left:-27%;margin-top: 45%; width: 180px; height: 180px;">
+<div class="head" style="padding: 50px 38px;"><span style="font-size: 30pt;float: left;">Full</span><br><span style="font-size: 22pt;margin-top:-3px;float: left;">Stack</span><br><span style="font-size: 12pt;margin-top:-2px;float: left;">Developer</span></div>
+<div id="bubble" class="bubble" style="margin-left: -70%;margin-top: -3%; ">
+<div class="head" style="padding: 45px 27px;"><span style="font-size: 14pt;">Product</span><br><span style="font-size: 17.5pt;">Design</span></div>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+	</div>
+<div id="footer">
+&copy; ANNU 2016 <span style="background: #fdffff;padding:10px 5px;">Made with <img src="Images/heart.png" style="margin-bottom:-2px;" height="18"> and Code in India.</span></div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+});
+</script>
+</body>
+</html>
