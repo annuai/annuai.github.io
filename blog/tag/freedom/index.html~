@@ -1,0 +1,118 @@
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>freedom - Annu's Blog</title>
+    <meta name="description" content="">
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../favicon.ico">
+
+    <link rel="stylesheet" type="text/css" href="../../assets/css/screen.css?v=cb251c9f9d">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
+
+
+    <link rel="canonical" href="index.html">
+    <meta name="referrer" content="origin">
+    
+    <meta property="og:site_name" content="Annu's Blog">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="freedom - Annu's Blog">
+    <meta property="og:url" content="http://annu.co/blogtag/freedom/">
+    <meta property="article:modified_time" content="2016-05-03T04:48:33.429Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="freedom - Annu's Blog">
+    <meta name="twitter:url" content="http://annu.co/blogtag/freedom/">
+    
+    <script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Series",
+    "publisher": "Annu&#x27;s Blog",
+    "url": "http://annu.co/blogtag/freedom/",
+    "name": "freedom"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 0.7">
+    <link rel="alternate" type="application/rss+xml" title="Annu's Blog" href="../../rss/index.html">
+</head>
+<body class="tag-template tag-freedom nav-closed">
+
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="index.html#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+            <li class="nav-home" role="presentation"><a href="http://annu.co/blog/">Home</a></li>
+    </ul>
+    <a class="subscribe-button icon-feed" href="../../rss/index.rss">Subscribe</a>
+</div>
+<span class="nav-cover"></span>
+
+
+    <div class="site-wrapper">
+
+        
+<header class="main-header tag-head no-cover">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="../../"><img src="../../content/images/2016/04/text5251.png" alt="Annu's Blog"></a>
+            <a class="menu-button icon-menu" href="index.html#"><span class="word">Menu</span></a>
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">freedom</h1>
+            <h2 class="page-description">
+                    A 1-post collection
+            </h2>
+        </div>
+    </div>
+</header>
+
+<main class="content" role="main">
+
+    <div class="extra-pagination inner">
+    <nav class="pagination" role="navigation">
+    <span class="page-number">Page 1 of 1</span>
+</nav>
+
+</div>
+
+<article class="post tag-design tag-open-source tag-freedom tag-open-design">
+    <header class="post-header">
+        <h2 class="post-title"><a href="../../the-phenomenon-of-open-design/">The Phenomenon of Open Design</a></h2>
+    </header>
+    <section class="post-excerpt">
+        <p>Design is not very new. In fact, Design is something human beings had been doing for centennials. But as we all are, human beings are generally <a class="read-more" href="../../the-phenomenon-of-open-design/">»</a></p>
+    </section>
+    <footer class="post-meta">
+        <time class="post-date" datetime="2016-05-03">03 May 2016</time>
+         <span class="post-tag"> <a href="../design/">design</a>, <a href="../open-source/">open source</a>, <a href="index.html">freedom</a>, <a href="../open-design/">open design</a></span>
+    </footer>
+</article>
+
+<nav class="pagination" role="navigation">
+    <span class="page-number">Page 1 of 1</span>
+</nav>
+
+
+</main>
+
+
+        <footer class="site-footer clearfix">
+            <section class="copyright"><a href="../../">Annu's Blog</a> © 2016</section>
+        </footer>
+
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    
+
+    <script type="text/javascript" src="../../assets/js/jquery.fitvids.js?v=cb251c9f9d"></script>
+    <script type="text/javascript" src="../../assets/js/index.js?v=cb251c9f9d"></script>
+
+</body>
