@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=cb251c9f9d">
+    <link rel="stylesheet" type="text/css" href="../assets/css/screen.css?v=964dfef675">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
 
@@ -22,7 +22,7 @@
     <meta property="og:type" content="article">
     <meta property="og:title" content="Update:  Still Alive and Kickin!">
     <meta property="og:description" content="Been a long time since I wrote something. Had kept a promise to myself to not stop writing again, but had to - given the situation I was in. A hard time May was, I had a lot of things planned, none of them which worked out. It was a">
-    <meta property="og:url" content="http://annu.co/blogupdate-still-alive-and-kickin/">
+    <meta property="og:url" content="http://localhost:2368/update-still-alive-and-kickin/">
     <meta property="article:published_time" content="2016-06-11T03:44:00.000Z">
     <meta property="article:modified_time" content="2016-06-11T05:16:18.757Z">
     <meta property="article:tag" content="Life">
@@ -36,7 +36,7 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Update:  Still Alive and Kickin!">
     <meta name="twitter:description" content="Been a long time since I wrote something. Had kept a promise to myself to not stop writing again, but had to - given the situation I was in. A hard time May was, I had a lot of things planned, none of them which worked out. It was a">
-    <meta name="twitter:url" content="http://annu.co/blogupdate-still-alive-and-kickin/">
+    <meta name="twitter:url" content="http://localhost:2368/update-still-alive-and-kickin/">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Annuai">
     <meta name="twitter:label2" content="Filed under">
@@ -50,10 +50,10 @@
     "author": {
         "@type": "Person",
         "name": "Annuai",
-        "url": "http://annu.co/blogauthor/annuai/"
+        "url": "http://localhost:2368/author/annuai/"
     },
     "headline": "Update:  Still Alive and Kickin!",
-    "url": "http://annu.co/blogupdate-still-alive-and-kickin/",
+    "url": "http://localhost:2368/update-still-alive-and-kickin/",
     "datePublished": "2016-06-11T03:44:00.000Z",
     "dateModified": "2016-06-11T05:16:18.757Z",
     "keywords": "Life, Linux, Personal, Code, updates, development, design",
@@ -132,13 +132,13 @@
 
             <section class="share">
                 <h4>Share this post</h4>
-                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Update%3A%20%20Still%20Alive%20and%20Kickin!&amp;url=http://annu.co/blogupdate-still-alive-and-kickin/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Update%3A%20%20Still%20Alive%20and%20Kickin!&amp;url=http://localhost:2368/update-still-alive-and-kickin/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://annu.co/blogupdate-still-alive-and-kickin/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:2368/update-still-alive-and-kickin/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <span class="hidden">Facebook</span>
                 </a>
-                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://annu.co/blogupdate-still-alive-and-kickin/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <a class="icon-google-plus" href="https://plus.google.com/share?url=http://localhost:2368/update-still-alive-and-kickin/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                     <span class="hidden">Google+</span>
                 </a>
             </section>
@@ -174,7 +174,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     
 
-    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=cb251c9f9d"></script>
-    <script type="text/javascript" src="../assets/js/index.js?v=cb251c9f9d"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fitvids.js?v=964dfef675"></script>
+    <script type="text/javascript" src="../assets/js/index.js?v=964dfef675"></script>
 
 </body>

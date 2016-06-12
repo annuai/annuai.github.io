@@ -11,7 +11,7 @@
 
     <link rel="shortcut icon" href="../../favicon.ico">
 
-    <link rel="stylesheet" type="text/css" href="../../assets/css/screen.css?v=cb251c9f9d">
+    <link rel="stylesheet" type="text/css" href="../../assets/css/screen.css?v=964dfef675">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic%7COpen+Sans:700,400">
 
 
@@ -21,18 +21,18 @@
     <meta property="og:site_name" content="Annu's Blog">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Coding - Annu's Blog">
-    <meta property="og:url" content="http://annu.co/blogtag/coding/">
+    <meta property="og:url" content="http://localhost:2368/tag/coding/">
     <meta property="article:modified_time" content="2016-04-16T06:08:56.105Z">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Coding - Annu's Blog">
-    <meta name="twitter:url" content="http://annu.co/blogtag/coding/">
+    <meta name="twitter:url" content="http://localhost:2368/tag/coding/">
     
     <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "Series",
     "publisher": "Annu&#x27;s Blog",
-    "url": "http://annu.co/blogtag/coding/",
+    "url": "http://localhost:2368/tag/coding/",
     "name": "Coding"
 }
     </script>
@@ -112,7 +112,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     
 
-    <script type="text/javascript" src="../../assets/js/jquery.fitvids.js?v=cb251c9f9d"></script>
-    <script type="text/javascript" src="../../assets/js/index.js?v=cb251c9f9d"></script>
+    <script type="text/javascript" src="../../assets/js/jquery.fitvids.js?v=964dfef675"></script>
+    <script type="text/javascript" src="../../assets/js/index.js?v=964dfef675"></script>
 
 </body>
